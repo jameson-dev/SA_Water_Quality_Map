@@ -1,0 +1,2978 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ae41b21327f7de2a9bda313ed36a6bb6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ae41b21327f7de2a9bda313ed36a6bb6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ae41b21327f7de2a9bda313ed36a6bb6 = L.map(
+                "map_ae41b21327f7de2a9bda313ed36a6bb6",
+                {
+                    center: [-30.5344, 135.63],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_668403fab1d7fdbf1562322ffd42b8f4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_668403fab1d7fdbf1562322ffd42b8f4.addTo(map_ae41b21327f7de2a9bda313ed36a6bb6);
+        
+    
+            var marker_cluster_45cf66629e925dff04d6c3683bfd4fd9 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_74deaaaa93b7aed7fcfcfd7d32b710dc = L.marker(
+                [57.1965999, 25.3458201],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_94cab143f76005108814ac8eba9a9c79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_74deaaaa93b7aed7fcfcfd7d32b710dc.setIcon(icon_94cab143f76005108814ac8eba9a9c79);
+        
+    
+        var popup_a3d5907b05c2e67cdf309c39500b2ebf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb39fae028bfc96e05e58dbb6f8a6eb6 = $(`<div id="html_eb39fae028bfc96e05e58dbb6f8a6eb6" style="width: 100.0%; height: 100.0%;">Alkalinity: 355<br>Aluminium - acid soluble: 0.013<br>Antimony: <0.0003<br>Arsenic: 0.00018<br>Barium: 0.0391<br>Beryllium: <0.0002<br>Bicarbonate: 434<br>Boron: 0.133<br>Cadmium: <0.0001<br>Calcium: 74.0<br>Carbonate: 0<br>Chloride: 146<br>Chromium: 0.0001<br>Colour: <1<br>Copper: 0.0053<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: 0.9<br>Hardness: 398<br>Iodide: 0.11<br>Iron: 0.0018<br>Lanthanum: <0.0001<br>Lead: <0.0001<br>Magnesium: 51.9<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0013<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 14.05<br>pH: 7.7<br>Potassium: 1.84<br>Selenium: 0.0015<br>Silica - reactive: 69.7<br>Silver: <0.00002<br>Sodium: 122<br>Sulphate: 85.1<br>Total dissolved solids: 725<br>Turbidity: <0.10<br>Uranium: 0.0007<br>Zinc: 0.0073<br>Hardness - English Degrees: 27.86<br>Hardness - French Degrees: 39.8<br>Hardness - German Degrees: 22.29<br>Hardness - International: 398</div>`)[0];
+                popup_a3d5907b05c2e67cdf309c39500b2ebf.setContent(html_eb39fae028bfc96e05e58dbb6f8a6eb6);
+            
+        
+
+        marker_74deaaaa93b7aed7fcfcfd7d32b710dc.bindPopup(popup_a3d5907b05c2e67cdf309c39500b2ebf)
+        ;
+
+        
+    
+    
+            var marker_e499020f4a4bbdd600b4dbc24c688d03 = L.marker(
+                [-34.8415889, 138.7336233],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_39c23763e3bb99435962a923742c4532 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e499020f4a4bbdd600b4dbc24c688d03.setIcon(icon_39c23763e3bb99435962a923742c4532);
+        
+    
+        var popup_407bbc54de437c0edfdf151e70b00d84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b23cb78dd20efb49b743e665c8d0b6da = $(`<div id="html_b23cb78dd20efb49b743e665c8d0b6da" style="width: 100.0%; height: 100.0%;">Alkalinity: 51<br>Aluminium - acid soluble: 0.035<br>Antimony: <0.0003<br>Arsenic: 0.00032<br>Barium: 0.0445<br>Beryllium: <0.0002<br>Bicarbonate: 63<br>Boron: <0.020<br>Cadmium: <0.0001<br>Calcium: 19.3<br>Carbonate: 0<br>Chloral hydrate: 4.5<br>Chloride: 77<br>Chlorine (free residual): 0.4<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 0.5<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: 0.0002<br>Colour: <1<br>Copper: 0.0033<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 4<br>E. coli: 0<br>Fluoride: 0.7<br>Hardness: 90<br>Iodide: 0.03<br>Iron: 0.0029<br>Lanthanum: <0.0001<br>Lead: 0.0002<br>Magnesium: 10.20<br>Manganese: 0.0002<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>Nickel: 0.0007<br>Nitrate + nitrite as NO3: 0.72<br>Pentachlorophenol: <0.05<br>pH: 7.2<br>Potassium: 4.11<br>Selenium: <0.0001<br>Silica - reactive: 1.78<br>Silver: <0.00002<br>Sodium: 49.3<br>Sulphate: 44.4<br>Total dissolved solids: 266<br>Trichloroacetic acid: 5<br>Trihalomethanes (THMs): 116<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0013<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 6.30<br>Hardness - French Degrees: 9.0<br>Hardness - German Degrees: 5.04<br>Hardness - International: 90</div>`)[0];
+                popup_407bbc54de437c0edfdf151e70b00d84.setContent(html_b23cb78dd20efb49b743e665c8d0b6da);
+            
+        
+
+        marker_e499020f4a4bbdd600b4dbc24c688d03.bindPopup(popup_407bbc54de437c0edfdf151e70b00d84)
+        ;
+
+        
+    
+    
+            var marker_642d12e71aba9081bf8d5fdd9a069696 = L.marker(
+                [-34.2532589, 140.4579655],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_496db1c55ae8c9606df2e1dda220a221 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_642d12e71aba9081bf8d5fdd9a069696.setIcon(icon_496db1c55ae8c9606df2e1dda220a221);
+        
+    
+        var popup_90cd5d8e132ca24d25ce3fe5b36e08d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d74f3c3393c5f9d8089a707bd3cc481 = $(`<div id="html_0d74f3c3393c5f9d8089a707bd3cc481" style="width: 100.0%; height: 100.0%;">Alkalinity: 48<br>Aluminium - acid soluble: 0.017<br>Antimony: <0.0003<br>Arsenic: 0.00035<br>Barium: 0.0417<br>Beryllium: <0.0002<br>Bicarbonate: 59<br>Boron: 0.026<br>Cadmium: <0.0001<br>Calcium: 14.4<br>Carbonate: 0<br>Chloral hydrate: 6.4<br>Chloride: 74<br>Chlorine (free residual): 1.0<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.1<br>Chloroacetic acid: <3<br>Chromium: 0.0021<br>Colour: <1<br>Copper: 0.0196<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 10<br>E. coli: 0<br>Fluoride: 0.9<br>Hardness: 75<br>Iodide: <0.01<br>Iron: 0.0069<br>Lanthanum: <0.0001<br>Lead: 0.0001<br>Magnesium: 9.59<br>Manganese: 0.0026<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>Nickel: 0.0005<br>Nitrate + nitrite as NO3: 0.47<br>Pentachlorophenol: <0.05<br>pH: 7.6<br>Potassium: 3.87<br>Selenium: <0.0001<br>Silica - reactive: 0.84<br>Silver: <0.00002<br>Sodium: 52.3<br>Sulphate: 45.5<br>Total dissolved solids: 249<br>Trichloroacetic acid: 5<br>Trihalomethanes (THMs): 123<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0069<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 5.25<br>Hardness - French Degrees: 7.5<br>Hardness - German Degrees: 4.20<br>Hardness - International: 75</div>`)[0];
+                popup_90cd5d8e132ca24d25ce3fe5b36e08d0.setContent(html_0d74f3c3393c5f9d8089a707bd3cc481);
+            
+        
+
+        marker_642d12e71aba9081bf8d5fdd9a069696.bindPopup(popup_90cd5d8e132ca24d25ce3fe5b36e08d0)
+        ;
+
+        
+    
+    
+            var marker_e73d673d0fd20f8a27c259c52205a44a = L.marker(
+                [-34.61341495, 138.93854551693641],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_88722455c82d389c43637331f0549dbe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e73d673d0fd20f8a27c259c52205a44a.setIcon(icon_88722455c82d389c43637331f0549dbe);
+        
+    
+        var popup_4aa8c998f99bc7bc26443fcedb362b14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_756f91b2f8e968ac6881ccdde06b372c = $(`<div id="html_756f91b2f8e968ac6881ccdde06b372c" style="width: 100.0%; height: 100.0%;">Alkalinity: 61<br>Aluminium - acid soluble: 0.020<br>Antimony: <0.0003<br>Arsenic: 0.00039<br>Barium: 0.0386<br>Beryllium: <0.0002<br>Bicarbonate: 75<br>Boron: 0.032<br>Cadmium: <0.0001<br>Calcium: 31.5<br>Carbonate: <1<br>Chloral hydrate: 9.7<br>Chloride: 125<br>Chlorine (free residual): 0.5<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 0.6<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: 0.0002<br>Colour: 1<br>Copper: 0.0148<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 6<br>E. coli: 0<br>Fluoride: 0.6<br>Hardness: 145<br>Iodide: 0.03<br>Iron: 0.0535<br>Lanthanum: <0.0001<br>Lead: 0.0004<br>Magnesium: 16.2<br>Manganese: 0.0045<br>Mercury: <0.00003<br>Molybdenum: 0.0003<br>Nickel: 0.0004<br>Nitrate + nitrite as NO3: 0.16<br>Pentachlorophenol: <0.05<br>pH: 7.4<br>Potassium: 5.12<br>Selenium: <0.0001<br>Silica - reactive: 2.91<br>Silver: <0.00002<br>Sodium: 70.1<br>Sulphate: 65.5<br>Total dissolved solids: 386<br>Trichloroacetic acid: 9<br>Trihalomethanes (THMs): 183<br>Turbidity: 0.25<br>Uranium: <0.0001<br>Zinc: 0.0028<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 10.15<br>Hardness - French Degrees: 14.5<br>Hardness - German Degrees: 8.12<br>Hardness - International: 145</div>`)[0];
+                popup_4aa8c998f99bc7bc26443fcedb362b14.setContent(html_756f91b2f8e968ac6881ccdde06b372c);
+            
+        
+
+        marker_e73d673d0fd20f8a27c259c52205a44a.bindPopup(popup_4aa8c998f99bc7bc26443fcedb362b14)
+        ;
+
+        
+    
+    
+            var marker_879beab72277fa7d422e3badd3d58a09 = L.marker(
+                [-34.61341495, 138.93854551693641],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_09bd68f1c4122b1bfdaa86b0873b96b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_879beab72277fa7d422e3badd3d58a09.setIcon(icon_09bd68f1c4122b1bfdaa86b0873b96b7);
+        
+    
+        var popup_49e32eef66a06a20cd9ba811c272786f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33366489712ec1124a64b6674ae485ed = $(`<div id="html_33366489712ec1124a64b6674ae485ed" style="width: 100.0%; height: 100.0%;">Alkalinity: 63<br>Aluminium - acid soluble: 0.031<br>Antimony: <0.0003<br>Arsenic: 0.00043<br>Barium: 0.0399<br>Beryllium: <0.0002<br>Bicarbonate: 77<br>Boron: 0.039<br>Cadmium: <0.0001<br>Calcium: 24.9<br>Carbonate: 0<br>Chloral hydrate: 6.8<br>Chloride: 117<br>Chlorine (free residual): 0.4<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 0.5<br>Chloroacetic acid: <3<br>Chromium: 0.0002<br>Colour: 1<br>Copper: 0.0068<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 10<br>E. coli: 0<br>Fluoride: 0.6<br>Hardness: 120<br>Iodide: <0.01<br>Iron: 0.0114<br>Lanthanum: <0.0001<br>Lead: 0.0003<br>Magnesium: 14.1<br>Manganese: 0.0019<br>Mercury: <0.00003<br>Molybdenum: 0.0003<br>Nickel: 0.0007<br>Nitrate + nitrite as NO3: 0.24<br>Pentachlorophenol: <0.05<br>pH: 7.2<br>Potassium: 4.97<br>Selenium: <0.0001<br>Silica - reactive: 3.10<br>Silver: <0.00002<br>Sodium: 64.4<br>Sulphate: 56.2<br>Total dissolved solids: 384<br>Trichloroacetic acid: 13<br>Trihalomethanes (THMs): 168<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0048<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 8.40<br>Hardness - French Degrees: 12.0<br>Hardness - German Degrees: 6.72<br>Hardness - International: 120</div>`)[0];
+                popup_49e32eef66a06a20cd9ba811c272786f.setContent(html_33366489712ec1124a64b6674ae485ed);
+            
+        
+
+        marker_879beab72277fa7d422e3badd3d58a09.bindPopup(popup_49e32eef66a06a20cd9ba811c272786f)
+        ;
+
+        
+    
+    
+            var marker_00f50af90680e7f7b4c3c2f0a9a5db17 = L.marker(
+                [-37.4818511, 140.0106789],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_f3ddcdb88b4d47f829d10f7e44b68f90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_00f50af90680e7f7b4c3c2f0a9a5db17.setIcon(icon_f3ddcdb88b4d47f829d10f7e44b68f90);
+        
+    
+        var popup_07f1f99acb20fe7ecefc3307853d8b06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_869777b96aae9597779585bbab12b3be = $(`<div id="html_869777b96aae9597779585bbab12b3be" style="width: 100.0%; height: 100.0%;">Alkalinity: 319<br>Aluminium - acid soluble: 0.001<br>Antimony: <0.0003<br>Arsenic: <0.00006<br>Barium: 0.0590<br>Beryllium: <0.0002<br>Bicarbonate: 390<br>Boron: 0.162<br>Cadmium: 0.0002<br>Calcium: 81.3<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 172<br>Chlorine (free residual): 1.0<br>Chlorine (total residual): 0.8<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0624<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.2<br>Hardness: 275<br>Iodide: 0.04<br>Iron: 0.0305<br>Lanthanum: <0.0001<br>Lead: 0.0025<br>Magnesium: 17.4<br>Manganese: 0.0048<br>Mercury: <0.00003<br>Molybdenum: 0.0002<br>Nickel: 0.0011<br>Nitrate + nitrite as NO3: 0.07<br>Pentachlorophenol: <0.05<br>pH: 7.7<br>Potassium: 10.41<br>Selenium: <0.0001<br>Silica - reactive: 16.1<br>Silver: <0.00002<br>Sodium: 131<br>Sulphate: 23.9<br>Total dissolved solids: 672<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 35<br>Turbidity: 0.17<br>Uranium: <0.0001<br>Zinc: 0.0141<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 19.25<br>Hardness - French Degrees: 27.5<br>Hardness - German Degrees: 15.40<br>Hardness - International: 275</div>`)[0];
+                popup_07f1f99acb20fe7ecefc3307853d8b06.setContent(html_869777b96aae9597779585bbab12b3be);
+            
+        
+
+        marker_00f50af90680e7f7b4c3c2f0a9a5db17.bindPopup(popup_07f1f99acb20fe7ecefc3307853d8b06)
+        ;
+
+        
+    
+    
+            var marker_6daf8828aca6881de5ba970623ae11b6 = L.marker(
+                [-34.2854741, 140.6017385],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_e2687e4303c5bcba17783d5c929f89d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6daf8828aca6881de5ba970623ae11b6.setIcon(icon_e2687e4303c5bcba17783d5c929f89d6);
+        
+    
+        var popup_3b08c96a6b8ac518c40e843c708a77dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7a305479c0ec0110a283abbd62ffae1 = $(`<div id="html_e7a305479c0ec0110a283abbd62ffae1" style="width: 100.0%; height: 100.0%;">Alkalinity: 50<br>Aluminium - acid soluble: 0.016<br>Antimony: <0.0003<br>Arsenic: 0.00037<br>Barium: 0.0417<br>Beryllium: <0.0002<br>Bicarbonate: 60<br>Boron: <0.020<br>Cadmium: <0.0001<br>Calcium: 13.9<br>Carbonate: 0<br>Chloral hydrate: 10.2<br>Chloride: 75<br>Chlorine (free residual): 1.1<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.3<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0045<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 12<br>E. coli: 0<br>Fluoride: 0.9<br>Hardness: 75<br>Iodide: 0.03<br>Iron: 0.0134<br>Lanthanum: <0.0001<br>Lead: 0.0002<br>Magnesium: 9.80<br>Manganese: 0.0034<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>Nickel: 0.0006<br>Nitrate + nitrite as NO3: 0.43<br>Pentachlorophenol: <0.05<br>pH: 7.5<br>Potassium: 3.77<br>Selenium: <0.0001<br>Silica - reactive: 1.89<br>Silver: <0.00002<br>Sodium: 53.3<br>Sulphate: 46.4<br>Total dissolved solids: 250<br>Trichloroacetic acid: 9<br>Trihalomethanes (THMs): 105<br>Turbidity: 0.13<br>Uranium: <0.0001<br>Zinc: 0.0082<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 5.25<br>Hardness - French Degrees: 7.5<br>Hardness - German Degrees: 4.20<br>Hardness - International: 75</div>`)[0];
+                popup_3b08c96a6b8ac518c40e843c708a77dd.setContent(html_e7a305479c0ec0110a283abbd62ffae1);
+            
+        
+
+        marker_6daf8828aca6881de5ba970623ae11b6.bindPopup(popup_3b08c96a6b8ac518c40e843c708a77dd)
+        ;
+
+        
+    
+    
+            var marker_14a4808789c81451332cbaaf8f778118 = L.marker(
+                [-34.3517492, 139.6117093],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_620d66ee6e77b996ef05cc46981d57fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_14a4808789c81451332cbaaf8f778118.setIcon(icon_620d66ee6e77b996ef05cc46981d57fe);
+        
+    
+        var popup_f633d0f905bdfc08d10e0545ae9d5fcf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c5fddcb04707e2272fed1ddeac62f2e = $(`<div id="html_7c5fddcb04707e2272fed1ddeac62f2e" style="width: 100.0%; height: 100.0%;">Alkalinity: 62<br>Aluminium - acid soluble: 0.009<br>Antimony: <0.0003<br>Arsenic: 0.00033<br>Barium: 0.0382<br>Beryllium: <0.0002<br>Bicarbonate: 75<br>Boron: 0.026<br>Cadmium: <0.0001<br>Calcium: 15.2<br>Carbonate: 0<br>Chloral hydrate: 7.1<br>Chloride: 83<br>Chlorine (free residual): 0.8<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 0.9<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0952<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 11<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 78<br>Iodide: 0.03<br>Iron: 0.0418<br>Lanthanum: <0.0001<br>Lead: 0.0010<br>Magnesium: 9.72<br>Manganese: 0.0032<br>Mercury: <0.00003<br>Molybdenum: 0.0003<br>Nickel: 0.0012<br>Nitrate + nitrite as NO3: 1.06<br>Pentachlorophenol: <0.05<br>pH: 7.4<br>Potassium: 4.22<br>Selenium: <0.0001<br>Silica - reactive: 1.19<br>Silver: <0.00002<br>Sodium: 51.9<br>Sulphate: 16.9<br>Total dissolved solids: 246<br>Trichloroacetic acid: 7<br>Trihalomethanes (THMs): 112<br>Turbidity: 0.29<br>Uranium: <0.0001<br>Zinc: 0.0156<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 5.46<br>Hardness - French Degrees: 7.8<br>Hardness - German Degrees: 4.37<br>Hardness - International: 78</div>`)[0];
+                popup_f633d0f905bdfc08d10e0545ae9d5fcf.setContent(html_7c5fddcb04707e2272fed1ddeac62f2e);
+            
+        
+
+        marker_14a4808789c81451332cbaaf8f778118.bindPopup(popup_f633d0f905bdfc08d10e0545ae9d5fcf)
+        ;
+
+        
+    
+    
+            var marker_f7f45645469b6635e8d02f3b65d8db00 = L.marker(
+                [-36.3108349, 140.7731808],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_3cbeafcb1271fc37185e9603950d8700 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f7f45645469b6635e8d02f3b65d8db00.setIcon(icon_3cbeafcb1271fc37185e9603950d8700);
+        
+    
+        var popup_97778a00d4a49807bf4e5047197ad9cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa463c94aac06495a927031d3b00676e = $(`<div id="html_aa463c94aac06495a927031d3b00676e" style="width: 100.0%; height: 100.0%;">Alkalinity: 284<br>Aluminium - acid soluble: 0.002<br>Antimony: 0.0004<br>Arsenic: 0.00023<br>Barium: 0.0316<br>Beryllium: <0.0002<br>Bicarbonate: 346<br>Boron: 0.116<br>Cadmium: <0.0001<br>Calcium: 75.9<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 106<br>Chlorine (free residual): 1.0<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.0<br>Chloroacetic acid: <3<br>Chromium: 0.0001<br>Colour: <1<br>Copper: 0.0071<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.3<br>Hardness: 272<br>Iodide: <0.01<br>Iron: 0.0010<br>Lanthanum: <0.0001<br>Lead: 0.0003<br>Magnesium: 19.9<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0003<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 0.94<br>Pentachlorophenol: <0.05<br>pH: 7.4<br>Potassium: 4.69<br>Selenium: 0.0009<br>Silica - reactive: 19.3<br>Silver: <0.00002<br>Sodium: 80.6<br>Sulphate: 17.3<br>Total dissolved solids: 505<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 13<br>Turbidity: <0.10<br>Uranium: 0.0009<br>Zinc: 0.0029<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 19.04<br>Hardness - French Degrees: 27.2<br>Hardness - German Degrees: 15.23<br>Hardness - International: 272</div>`)[0];
+                popup_97778a00d4a49807bf4e5047197ad9cc.setContent(html_aa463c94aac06495a927031d3b00676e);
+            
+        
+
+        marker_f7f45645469b6635e8d02f3b65d8db00.bindPopup(popup_97778a00d4a49807bf4e5047197ad9cc)
+        ;
+
+        
+    
+    
+            var marker_ea8b9db06236e0ea4ebbbf98c496c523 = L.marker(
+                [-34.08973005, 139.7705377184394],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_f5aeb7aadb0660ba1cf587fc8a30f3a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ea8b9db06236e0ea4ebbbf98c496c523.setIcon(icon_f5aeb7aadb0660ba1cf587fc8a30f3a8);
+        
+    
+        var popup_6f65dd5622da3f38fde72e0749cf8738 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_847b7c1b45b5466c308c86c018107630 = $(`<div id="html_847b7c1b45b5466c308c86c018107630" style="width: 100.0%; height: 100.0%;">Alkalinity: 62<br>Aluminium - acid soluble: 0.010<br>Antimony: <0.0003<br>Arsenic: 0.00035<br>Barium: 0.0370<br>Beryllium: <0.0002<br>Bicarbonate: 75<br>Boron: <0.020<br>Cadmium: <0.0001<br>Calcium: 14.0<br>Carbonate: 0<br>Chloral hydrate: 3.2<br>Chloride: 95<br>Chlorine (free residual): 1.1<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.2<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: 0.0002<br>Colour: <1<br>Copper: 0.0321<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 6<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 77<br>Iodide: <0.01<br>Iron: 0.0039<br>Lanthanum: <0.0001<br>Lead: 0.0003<br>Magnesium: 10.27<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: 0.0003<br>Nickel: 0.0005<br>Nitrate + nitrite as NO3: 0.30<br>Pentachlorophenol: <0.05<br>pH: 7.3<br>Potassium: 3.96<br>Selenium: <0.0001<br>Silica - reactive: 0.87<br>Silver: <0.00002<br>Sodium: 56.7<br>Sulphate: 19.6<br>Total dissolved solids: 269<br>Trichloroacetic acid: 3<br>Trihalomethanes (THMs): 86<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0060<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 5.39<br>Hardness - French Degrees: 7.7<br>Hardness - German Degrees: 4.31<br>Hardness - International: 77</div>`)[0];
+                popup_6f65dd5622da3f38fde72e0749cf8738.setContent(html_847b7c1b45b5466c308c86c018107630);
+            
+        
+
+        marker_ea8b9db06236e0ea4ebbbf98c496c523.bindPopup(popup_6f65dd5622da3f38fde72e0749cf8738)
+        ;
+
+        
+    
+    
+            var marker_0f2a01aff5091c5fdf030db900ca2f40 = L.marker(
+                [-34.6211018, 135.4632303],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_f6ce564e476437f60c84c482fa2ae9c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0f2a01aff5091c5fdf030db900ca2f40.setIcon(icon_f6ce564e476437f60c84c482fa2ae9c2);
+        
+    
+        var popup_049045a1ddb5403b2416f56111387ce2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7216cb1eccba53aa4b2627877aa854b = $(`<div id="html_a7216cb1eccba53aa4b2627877aa854b" style="width: 100.0%; height: 100.0%;">Alkalinity: 218<br>Aluminium - acid soluble: 0.002<br>Antimony: <0.0003<br>Arsenic: 0.00095<br>Barium: 0.0086<br>Beryllium: <0.0002<br>Bicarbonate: 267<br>Boron: 0.197<br>Cadmium: <0.0001<br>Calcium: 46.5<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 109<br>Chlorine (free residual): 1.0<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.0<br>Chloroacetic acid: <3<br>Chromium: 0.0032<br>Colour: <1<br>Copper: 0.0047<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 1.0<br>Hardness: 241<br>Iodide: 0.03<br>Iron: 0.0014<br>Lanthanum: <0.0001<br>Lead: 0.0003<br>Magnesium: 30.4<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: 0.0013<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 6.74<br>Pentachlorophenol: <0.05<br>pH: 7.8<br>Potassium: 5.85<br>Selenium: 0.0006<br>Silica - reactive: 7.90<br>Silver: <0.00002<br>Sodium: 67.0<br>Sulphate: 25.4<br>Total dissolved solids: 461<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 11<br>Turbidity: <0.10<br>Uranium: 0.0011<br>Zinc: 0.0051<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 16.87<br>Hardness - French Degrees: 24.1<br>Hardness - German Degrees: 13.50<br>Hardness - International: 241</div>`)[0];
+                popup_049045a1ddb5403b2416f56111387ce2.setContent(html_a7216cb1eccba53aa4b2627877aa854b);
+            
+        
+
+        marker_0f2a01aff5091c5fdf030db900ca2f40.bindPopup(popup_049045a1ddb5403b2416f56111387ce2)
+        ;
+
+        
+    
+    
+            var marker_3c45e8121c9102f684bce36a81f2c80e = L.marker(
+                [-34.9225714, 139.3323094],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_0f65363da80ce7a3518f19faaba50d66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3c45e8121c9102f684bce36a81f2c80e.setIcon(icon_0f65363da80ce7a3518f19faaba50d66);
+        
+    
+        var popup_0a8e25c2d05dce91e72cc589781b9cdb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59e67799d4fd0b8300010a129e30f75a = $(`<div id="html_59e67799d4fd0b8300010a129e30f75a" style="width: 100.0%; height: 100.0%;">Alkalinity: 71<br>Aluminium - acid soluble: 0.007<br>Antimony: <0.0003<br>Arsenic: 0.00034<br>Barium: 0.0366<br>Beryllium: <0.0002<br>Bicarbonate: 87<br>Boron: <0.020<br>Cadmium: <0.0001<br>Calcium: 16.7<br>Carbonate: 0<br>Chloral hydrate: 5.0<br>Chloride: 93<br>Chlorine (free residual): 1.0<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.1<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0264<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 10<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 85<br>Iodide: <0.01<br>Iron: 0.0036<br>Lanthanum: <0.0001<br>Lead: 0.0002<br>Magnesium: 10.43<br>Manganese: 0.0002<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>Nickel: 0.0004<br>Nitrate + nitrite as NO3: 0.74<br>Pentachlorophenol: <0.05<br>pH: 7.5<br>Potassium: 4.28<br>Selenium: <0.0001<br>Silica - reactive: 0.63<br>Silver: <0.00002<br>Sodium: 62.8<br>Sulphate: 17.6<br>Total dissolved solids: 282<br>Trichloroacetic acid: 3<br>Trihalomethanes (THMs): 119<br>Turbidity: 0.12<br>Uranium: <0.0001<br>Zinc: 0.0026<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 5.95<br>Hardness - French Degrees: 8.5<br>Hardness - German Degrees: 4.76<br>Hardness - International: 85</div>`)[0];
+                popup_0a8e25c2d05dce91e72cc589781b9cdb.setContent(html_59e67799d4fd0b8300010a129e30f75a);
+            
+        
+
+        marker_3c45e8121c9102f684bce36a81f2c80e.bindPopup(popup_0a8e25c2d05dce91e72cc589781b9cdb)
+        ;
+
+        
+    
+    
+            var marker_ab0ac884aff8c6121dbc29f9850f679d = L.marker(
+                [41.5235808, -90.5770967],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_75e0aba26dd08861cb47dee982b569fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ab0ac884aff8c6121dbc29f9850f679d.setIcon(icon_75e0aba26dd08861cb47dee982b569fa);
+        
+    
+        var popup_f3f86e5f070067eeb9aeb28e497f35f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87de3fe7c6ffb11f6cd276f68f7d3567 = $(`<div id="html_87de3fe7c6ffb11f6cd276f68f7d3567" style="width: 100.0%; height: 100.0%;">Alkalinity: 49<br>Bicarbonate: 54<br>Calcium: 13.8<br>Carbonate: 3<br>Chlorine (free residual): <0.1<br>Chloramine (mono residual): 2.7<br>Chlorine (total residual): 2.7<br>E. coli: 0<br>Nitrate + nitrite as NO3: 1.49<br>pH: 8.7<br>Total dissolved solids: 277<br>Turbidity: 0.20<br>Hardness - English Degrees: nan<br>Hardness - French Degrees: nan<br>Hardness - German Degrees: nan<br>Hardness - International: nan</div>`)[0];
+                popup_f3f86e5f070067eeb9aeb28e497f35f1.setContent(html_87de3fe7c6ffb11f6cd276f68f7d3567);
+            
+        
+
+        marker_ab0ac884aff8c6121dbc29f9850f679d.bindPopup(popup_f3f86e5f070067eeb9aeb28e497f35f1)
+        ;
+
+        
+    
+    
+            var marker_57202e77d934903e0463b8800d163568 = L.marker(
+                [48.6286783, -53.0335803],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_d39a2da36ac38f9741900fd08e596384 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_57202e77d934903e0463b8800d163568.setIcon(icon_d39a2da36ac38f9741900fd08e596384);
+        
+    
+        var popup_b2badb4a613e1365b96c21599031432c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa83028d040a49894b86c18f42541347 = $(`<div id="html_fa83028d040a49894b86c18f42541347" style="width: 100.0%; height: 100.0%;">Alkalinity: 228<br>Aluminium - acid soluble: 0.007<br>Antimony: <0.0003<br>Arsenic: 0.00198<br>Barium: 0.0093<br>Beryllium: <0.0002<br>Bicarbonate: 278<br>Boron: 0.108<br>Cadmium: <0.0001<br>Calcium: 59.8<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 207<br>Chlorine (free residual): 1.2<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.2<br>Chloroacetic acid: <3<br>Chromium: 0.0036<br>Colour: <1<br>Copper: 0.0051<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.6<br>Hardness: 282<br>Iodide: 0.06<br>Iron: 0.0023<br>Lanthanum: <0.0001<br>Lead: <0.0001<br>Magnesium: 32.1<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0002<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 14.18<br>Pentachlorophenol: <0.05<br>pH: 7.8<br>Potassium: 4.19<br>Selenium: 0.0009<br>Silica - reactive: 9.70<br>Silver: <0.00002<br>Sodium: 121<br>Sulphate: 35.9<br>Total dissolved solids: 677<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 19<br>Turbidity: <0.10<br>Uranium: 0.0020<br>Zinc: 0.0089<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 19.74<br>Hardness - French Degrees: 28.2<br>Hardness - German Degrees: 15.79<br>Hardness - International: 282</div>`)[0];
+                popup_b2badb4a613e1365b96c21599031432c.setContent(html_fa83028d040a49894b86c18f42541347);
+            
+        
+
+        marker_57202e77d934903e0463b8800d163568.bindPopup(popup_b2badb4a613e1365b96c21599031432c)
+        ;
+
+        
+    
+    
+            var marker_1633042e52a0cf92042ead37b7238ad9 = L.marker(
+                [-34.688566, 138.6507761],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_8cd6bf508153c5c4d4d382c0f7837015 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1633042e52a0cf92042ead37b7238ad9.setIcon(icon_8cd6bf508153c5c4d4d382c0f7837015);
+        
+    
+        var popup_8f3b275a3c7479db3acc8ff0aaf86857 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f6d5f4dae58fc60e6ebc13f423c5839 = $(`<div id="html_8f6d5f4dae58fc60e6ebc13f423c5839" style="width: 100.0%; height: 100.0%;">Alkalinity: 227<br>Aluminium - acid soluble: 0.003<br>Antimony: <0.0003<br>Arsenic: 0.00062<br>Barium: 0.0176<br>Beryllium: <0.0002<br>Bicarbonate: 277<br>Boron: 0.091<br>Cadmium: <0.0001<br>Calcium: 73.6<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 158<br>Chlorine (free residual): 1.1<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.1<br>Chloroacetic acid: <3<br>Chromium: 0.0012<br>Colour: <1<br>Copper: 0.0092<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.4<br>Hardness: 268<br>Iodide: 0.02<br>Iron: 0.0033<br>Lanthanum: <0.0001<br>Lead: 0.0006<br>Magnesium: 20.5<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0005<br>Nickel: 0.0004<br>Nitrate + nitrite as NO3: 15.90<br>Pentachlorophenol: <0.05<br>pH: 7.7<br>Potassium: 2.74<br>Selenium: 0.0008<br>Silica - reactive: 10.4<br>Silver: <0.00002<br>Sodium: 96.3<br>Sulphate: 26.2<br>Total dissolved solids: 575<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 19<br>Turbidity: <0.10<br>Uranium: 0.0012<br>Zinc: 0.0097<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 18.76<br>Hardness - French Degrees: 26.8<br>Hardness - German Degrees: 15.01<br>Hardness - International: 268</div>`)[0];
+                popup_8f3b275a3c7479db3acc8ff0aaf86857.setContent(html_8f6d5f4dae58fc60e6ebc13f423c5839);
+            
+        
+
+        marker_1633042e52a0cf92042ead37b7238ad9.bindPopup(popup_8f3b275a3c7479db3acc8ff0aaf86857)
+        ;
+
+        
+    
+    
+            var marker_d155a04351f9c36da7e00cf9def6aa5d = L.marker(
+                [-34.539947657631856, 135.47223757306145],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_77c5d9744dc9bc6e74f4b30e0c81040d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d155a04351f9c36da7e00cf9def6aa5d.setIcon(icon_77c5d9744dc9bc6e74f4b30e0c81040d);
+        
+    
+        var popup_79ca7182ce913d0b03eb66f44be97916 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60c6d332bb35c614416d6f4c341d9b80 = $(`<div id="html_60c6d332bb35c614416d6f4c341d9b80" style="width: 100.0%; height: 100.0%;">Alkalinity: 157<br>Aluminium - acid soluble: 0.011<br>Antimony: <0.0003<br>Arsenic: 0.00054<br>Barium: 0.0274<br>Beryllium: <0.0002<br>Bicarbonate: 192<br>Boron: 0.065<br>Cadmium: <0.0001<br>Calcium: 54.8<br>Carbonate: 0<br>Chloral hydrate: 5.4<br>Chloride: 136<br>Chlorine (free residual): 1.3<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.3<br>Chloroacetic acid: <3<br>Chromium: 0.0008<br>Colour: <1<br>Copper: 0.0085<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 19<br>E. coli: 0<br>Fluoride: 0.5<br>Hardness: 201<br>Iodide: 0.03<br>Iron: 0.0049<br>Lanthanum: <0.0001<br>Lead: 0.0006<br>Magnesium: 15.5<br>Manganese: 0.0014<br>Mercury: <0.00003<br>Molybdenum: 0.0005<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 9.61<br>Pentachlorophenol: <0.05<br>pH: 7.9<br>Potassium: 3.37<br>Selenium: 0.0005<br>Silica - reactive: 7.20<br>Silver: <0.00002<br>Sodium: 83.4<br>Sulphate: 35.9<br>Total dissolved solids: 478<br>Trichloroacetic acid: 7<br>Trihalomethanes (THMs): 145<br>Turbidity: 0.10<br>Uranium: 0.0007<br>Zinc: 0.0091<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 14.07<br>Hardness - French Degrees: 20.1<br>Hardness - German Degrees: 11.26<br>Hardness - International: 201</div>`)[0];
+                popup_79ca7182ce913d0b03eb66f44be97916.setContent(html_60c6d332bb35c614416d6f4c341d9b80);
+            
+        
+
+        marker_d155a04351f9c36da7e00cf9def6aa5d.bindPopup(popup_79ca7182ce913d0b03eb66f44be97916)
+        ;
+
+        
+    
+    
+            var marker_ce28d6a0d8ba203e88f3939fe31005ee = L.marker(
+                [55.7037103, 12.5720401],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_57ba721e77fbe7bf311fe8ed421d20ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ce28d6a0d8ba203e88f3939fe31005ee.setIcon(icon_57ba721e77fbe7bf311fe8ed421d20ab);
+        
+    
+        var popup_2a225323840c557aedd6d191d7b3a7e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9252d8f70fcda42efac03458e6b5d90 = $(`<div id="html_c9252d8f70fcda42efac03458e6b5d90" style="width: 100.0%; height: 100.0%;">Alkalinity: 519<br>Aluminium - acid soluble: 0.002<br>Antimony: <0.0003<br>Arsenic: 0.00070<br>Barium: 0.0042<br>Beryllium: <0.0002<br>Bicarbonate: 634<br>Boron: 0.246<br>Cadmium: <0.0001<br>Calcium: 102.4<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 468<br>Chlorine (free residual): 1.4<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.4<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: 0.0032<br>Colour: <1<br>Copper: 0.0436<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 1.0<br>Hardness: 576<br>Iodide: 0.06<br>Iron: 0.0061<br>Lanthanum: <0.0001<br>Lead: 0.0010<br>Magnesium: 77.8<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>Nickel: 0.0004<br>Nitrate + nitrite as NO3: 0.23<br>Pentachlorophenol: <0.05<br>pH: 7.1<br>Potassium: 10.8<br>Selenium: 0.0028<br>Silica - reactive: 29.3<br>Silver: <0.00002<br>Sodium: 320<br>Sulphate: 125.5<br>Total dissolved solids: 1,465<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 4<br>Turbidity: <0.10<br>Uranium: 0.0015<br>Zinc: 0.0276<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 40.32<br>Hardness - French Degrees: 57.6<br>Hardness - German Degrees: 32.26<br>Hardness - International: 576</div>`)[0];
+                popup_2a225323840c557aedd6d191d7b3a7e8.setContent(html_c9252d8f70fcda42efac03458e6b5d90);
+            
+        
+
+        marker_ce28d6a0d8ba203e88f3939fe31005ee.bindPopup(popup_2a225323840c557aedd6d191d7b3a7e8)
+        ;
+
+        
+    
+    
+            var marker_aa76c4459f37e201937ec6b489dc9c44 = L.marker(
+                [-34.3762223, 140.4769492],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_77b697575a9085be38d73c65d85aaa17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_aa76c4459f37e201937ec6b489dc9c44.setIcon(icon_77b697575a9085be38d73c65d85aaa17);
+        
+    
+        var popup_e10d13ddb1576124e23b4bb7c3dd09a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd274e9deb103b562e2d3f7906be19f4 = $(`<div id="html_cd274e9deb103b562e2d3f7906be19f4" style="width: 100.0%; height: 100.0%;">Alkalinity: 44<br>Aluminium - acid soluble: 0.019<br>Antimony: <0.0003<br>Arsenic: 0.00034<br>Barium: 0.0401<br>Beryllium: <0.0002<br>Bicarbonate: 53<br>Boron: <0.020<br>Cadmium: <0.0001<br>Calcium: 11.9<br>Carbonate: 0<br>Chloral hydrate: 25.8<br>Chloride: 62<br>Chlorine (free residual): 0.8<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 0.9<br>Chloroacetic acid: 4<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0081<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 27<br>E. coli: 0<br>Fluoride: 0.9<br>Hardness: 67<br>Iodide: 0.03<br>Iron: 0.1257<br>Lanthanum: <0.0001<br>Lead: 0.0002<br>Magnesium: 9.11<br>Manganese: 0.0076<br>Mercury: <0.00003<br>Molybdenum: 0.0003<br>Nickel: 0.0007<br>Nitrate + nitrite as NO3: 0.28<br>Pentachlorophenol: <0.05<br>pH: 7.8<br>Potassium: 3.71<br>Selenium: <0.0001<br>Silica - reactive: 1.42<br>Silver: <0.00002<br>Sodium: 50.3<br>Sulphate: 40.6<br>Total dissolved solids: 223<br>Trichloroacetic acid: 29<br>Trihalomethanes (THMs): 98<br>Turbidity: 0.52<br>Uranium: <0.0001<br>Zinc: 0.0187<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 4.69<br>Hardness - French Degrees: 6.7<br>Hardness - German Degrees: 3.75<br>Hardness - International: 67</div>`)[0];
+                popup_e10d13ddb1576124e23b4bb7c3dd09a9.setContent(html_cd274e9deb103b562e2d3f7906be19f4);
+            
+        
+
+        marker_aa76c4459f37e201937ec6b489dc9c44.bindPopup(popup_e10d13ddb1576124e23b4bb7c3dd09a9)
+        ;
+
+        
+    
+    
+            var marker_fd360df7c10b1ad60aea40ad8b129373 = L.marker(
+                [53.4433552, -1.9499173],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_bd133136f891e085d23ab6a750feec04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fd360df7c10b1ad60aea40ad8b129373.setIcon(icon_bd133136f891e085d23ab6a750feec04);
+        
+    
+        var popup_48eb3cfe8d1de723bf792ca67f710b48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c522c923445de16a95730ef64910c11 = $(`<div id="html_4c522c923445de16a95730ef64910c11" style="width: 100.0%; height: 100.0%;">Alkalinity: 61<br>Aluminium - acid soluble: 0.014<br>Antimony: <0.0003<br>Arsenic: 0.00033<br>Barium: 0.0373<br>Beryllium: <0.0002<br>Bicarbonate: 74<br>Boron: <0.020<br>Cadmium: <0.0001<br>Calcium: 14.3<br>Carbonate: 0<br>Chloral hydrate: 6.8<br>Chloride: 75<br>Chlorine (free residual): 1.0<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.1<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0023<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 12<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 73<br>Iodide: <0.01<br>Iron: 0.0089<br>Lanthanum: <0.0001<br>Lead: 0.0004<br>Magnesium: 9.12<br>Manganese: 0.0010<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>Nickel: 0.0005<br>Nitrate + nitrite as NO3: 0.83<br>Pentachlorophenol: <0.05<br>pH: 7.9<br>Potassium: 3.86<br>Selenium: <0.0001<br>Silica - reactive: 1.74<br>Silver: <0.00002<br>Sodium: 46.2<br>Sulphate: 15.2<br>Total dissolved solids: 224<br>Trichloroacetic acid: 6<br>Trihalomethanes (THMs): 100<br>Turbidity: 0.33<br>Uranium: <0.0001<br>Zinc: 0.0079<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 5.11<br>Hardness - French Degrees: 7.3<br>Hardness - German Degrees: 4.09<br>Hardness - International: 73</div>`)[0];
+                popup_48eb3cfe8d1de723bf792ca67f710b48.setContent(html_4c522c923445de16a95730ef64910c11);
+            
+        
+
+        marker_fd360df7c10b1ad60aea40ad8b129373.bindPopup(popup_48eb3cfe8d1de723bf792ca67f710b48)
+        ;
+
+        
+    
+    
+            var marker_2ac969bba0aae4ed92b18e3c24db974e = L.marker(
+                [45.428679, -122.497174],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_ba581e56ad2e38328954ca7d88708f9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2ac969bba0aae4ed92b18e3c24db974e.setIcon(icon_ba581e56ad2e38328954ca7d88708f9f);
+        
+    
+        var popup_6cac1d2a50f5cbb94d73bcc41b59c2d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b651d78da40a49f4d4c095288aa4b92 = $(`<div id="html_6b651d78da40a49f4d4c095288aa4b92" style="width: 100.0%; height: 100.0%;">Alkalinity: 60<br>Aluminium - acid soluble: 0.022<br>Antimony: <0.0003<br>Arsenic: 0.00037<br>Barium: 0.0255<br>Beryllium: <0.0002<br>Bicarbonate: 74<br>Boron: 0.068<br>Cadmium: <0.0001<br>Calcium: 24.2<br>Carbonate: 0<br>Chloral hydrate: 17.5<br>Chloride: 94<br>Chlorine (free residual): 0.3<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 0.4<br>Chloroacetic acid: 4<br>Chromium: 0.0002<br>Colour: <1<br>Copper: 0.0122<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 12<br>E. coli: 0<br>Fluoride: 0.7<br>Hardness: 109<br>Iodide: <0.01<br>Iron: 0.0081<br>Lanthanum: <0.0001<br>Lead: 0.0002<br>Magnesium: 11.9<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: 0.0003<br>Nickel: 0.0004<br>Nitrate + nitrite as NO3: 0.24<br>Pentachlorophenol: <0.05<br>pH: 7.5<br>Potassium: 4.42<br>Selenium: <0.0001<br>Silica - reactive: 1.40<br>Silver: <0.00002<br>Sodium: 52.4<br>Sulphate: 38.3<br>Total dissolved solids: 295<br>Trichloroacetic acid: 10<br>Trihalomethanes (THMs): 196<br>Turbidity: 0.10<br>Uranium: <0.0001<br>Zinc: 0.0048<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 7.63<br>Hardness - French Degrees: 10.9<br>Hardness - German Degrees: 6.10<br>Hardness - International: 109</div>`)[0];
+                popup_6cac1d2a50f5cbb94d73bcc41b59c2d0.setContent(html_6b651d78da40a49f4d4c095288aa4b92);
+            
+        
+
+        marker_2ac969bba0aae4ed92b18e3c24db974e.bindPopup(popup_6cac1d2a50f5cbb94d73bcc41b59c2d0)
+        ;
+
+        
+    
+    
+            var marker_aee876131d5e6a41be44caf692dbf05e = L.marker(
+                [-31.8876169, 138.4227131],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_1ea1f0873bd2a5cfc9a306cc95eab6ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_aee876131d5e6a41be44caf692dbf05e.setIcon(icon_1ea1f0873bd2a5cfc9a306cc95eab6ee);
+        
+    
+        var popup_ba1d615746b175b11b8fd87fc58b4801 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47017c317a32dcdf2eed1bd982d7b75f = $(`<div id="html_47017c317a32dcdf2eed1bd982d7b75f" style="width: 100.0%; height: 100.0%;">Alkalinity: 79<br>Aluminium - acid soluble: 0.004<br>Antimony: <0.0003<br>Arsenic: <0.00006<br>Barium: 0.0024<br>Beryllium: <0.0002<br>Bicarbonate: 96<br>Boron: 0.290<br>Cadmium: <0.0001<br>Calcium: 15.9<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 105<br>Chlorine (free residual): 1.1<br>Chlorine (total residual): 1.2<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0022<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 95<br>Iodide: 0.02<br>Iron: 0.0042<br>Lanthanum: <0.0001<br>Lead: 0.0001<br>Magnesium: 13.5<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: <0.0001<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: <0.014<br>Pentachlorophenol: <0.05<br>pH: 8.0<br>Potassium: 1.72<br>Selenium: <0.0001<br>Silica - reactive: 1.88<br>Silver: <0.00002<br>Sodium: 76.1<br>Sulphate: 50.0<br>Total dissolved solids: 328<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 14<br>Turbidity: <0.10<br>Uranium: 0.0004<br>Zinc: 0.0040<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 6.65<br>Hardness - French Degrees: 9.5<br>Hardness - German Degrees: 5.32<br>Hardness - International: 95</div>`)[0];
+                popup_ba1d615746b175b11b8fd87fc58b4801.setContent(html_47017c317a32dcdf2eed1bd982d7b75f);
+            
+        
+
+        marker_aee876131d5e6a41be44caf692dbf05e.bindPopup(popup_ba1d615746b175b11b8fd87fc58b4801)
+        ;
+
+        
+    
+    
+            var marker_8f3d7d845315f0213a579fcc4f256e3f = L.marker(
+                [-26.9659828, 133.3078312],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_92d7cb50d4092c180ad820841c9901a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8f3d7d845315f0213a579fcc4f256e3f.setIcon(icon_92d7cb50d4092c180ad820841c9901a8);
+        
+    
+        var popup_1e227358c8b3d46785ff07c92408f2ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e75910cf8668ba355e5fa919c79c912 = $(`<div id="html_3e75910cf8668ba355e5fa919c79c912" style="width: 100.0%; height: 100.0%;">Alkalinity: 69<br>Aluminium - acid soluble: 0.004<br>Antimony: <0.0003<br>Arsenic: <0.00006<br>Barium: 0.0006<br>Beryllium: <0.0002<br>Bicarbonate: 85<br>Boron: 0.400<br>Cadmium: <0.0001<br>Calcium: 23.9<br>Carbonate: 0<br>Chloride: 12<br>Chromium: 0.0001<br>Colour: <1<br>Copper: 0.0109<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 61<br>Iodide: 0.04<br>Iron: 0.0066<br>Lanthanum: <0.0001<br>Lead: 0.0021<br>Magnesium: 0.27<br>Manganese: 0.0004<br>Mercury: 0.00004<br>Molybdenum: <0.0001<br>Nickel: 0.0002<br>Nitrate + nitrite as NO3: 3.70<br>pH: 7.0<br>Potassium: 0.78<br>Selenium: <0.0001<br>Silica - reactive: 1.49<br>Silver: <0.00002<br>Sodium: 10.4<br>Sulphate: <0.6<br>Total dissolved solids: 118<br>Turbidity: 0.14<br>Uranium: <0.0001<br>Zinc: 0.0131<br>Hardness - English Degrees: 4.27<br>Hardness - French Degrees: 6.1<br>Hardness - German Degrees: 3.42<br>Hardness - International: 61</div>`)[0];
+                popup_1e227358c8b3d46785ff07c92408f2ec.setContent(html_3e75910cf8668ba355e5fa919c79c912);
+            
+        
+
+        marker_8f3d7d845315f0213a579fcc4f256e3f.bindPopup(popup_1e227358c8b3d46785ff07c92408f2ec)
+        ;
+
+        
+    
+    
+            var marker_0c1ef190748aa5b4913cbdee26483450 = L.marker(
+                [-37.5633801, 140.6999835],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_f7fbac1a26f4f00744af0033b883a5a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0c1ef190748aa5b4913cbdee26483450.setIcon(icon_f7fbac1a26f4f00744af0033b883a5a4);
+        
+    
+        var popup_5ed201607b1927076923bde8fc557888 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6ab633c5a40f05c34c3249d75977163 = $(`<div id="html_c6ab633c5a40f05c34c3249d75977163" style="width: 100.0%; height: 100.0%;">Alkalinity: 350<br>Aluminium - acid soluble: 0.002<br>Antimony: <0.0003<br>Arsenic: 0.00011<br>Barium: 0.0149<br>Beryllium: <0.0002<br>Bicarbonate: 427<br>Boron: 0.026<br>Cadmium: <0.0001<br>Calcium: 121<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 108<br>Chlorine (free residual): 1.1<br>Chlorine (total residual): 0.8<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0122<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 2<br>E. coli: 0<br>Fluoride: 0.1<br>Hardness: 347<br>Iodide: 0.03<br>Iron: 0.0075<br>Lanthanum: <0.0001<br>Lead: 0.0006<br>Magnesium: 11.10<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0002<br>Nickel: 0.0004<br>Nitrate + nitrite as NO3: 0.02<br>Pentachlorophenol: <0.05<br>pH: 7.3<br>Potassium: 1.68<br>Selenium: <0.0001<br>Silica - reactive: 12.9<br>Silver: <0.00002<br>Sodium: 62.7<br>Sulphate: 6.9<br>Total dissolved solids: 548<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 46<br>Turbidity: 0.16<br>Uranium: <0.0001<br>Zinc: 0.0065<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 24.29<br>Hardness - French Degrees: 34.7<br>Hardness - German Degrees: 19.43<br>Hardness - International: 347</div>`)[0];
+                popup_5ed201607b1927076923bde8fc557888.setContent(html_c6ab633c5a40f05c34c3249d75977163);
+            
+        
+
+        marker_0c1ef190748aa5b4913cbdee26483450.bindPopup(popup_5ed201607b1927076923bde8fc557888)
+        ;
+
+        
+    
+    
+            var marker_2524f80ddb5a2fd3783a398dda42a238 = L.marker(
+                [30.8249757, 76.88262807425781],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_6f2f54a4c3de931527c20214b5c9f63e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2524f80ddb5a2fd3783a398dda42a238.setIcon(icon_6f2f54a4c3de931527c20214b5c9f63e);
+        
+    
+        var popup_ac3080f5ddceabe42ebf9bdcf36eee95 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0eb860866415bc28a59c6474b339a278 = $(`<div id="html_0eb860866415bc28a59c6474b339a278" style="width: 100.0%; height: 100.0%;">Alkalinity: 301<br>Aluminium - acid soluble: 0.003<br>Antimony: <0.0003<br>Arsenic: 0.00013<br>Barium: 0.0677<br>Beryllium: <0.0002<br>Bicarbonate: 368<br>Boron: 0.132<br>Cadmium: <0.0001<br>Calcium: 46.0<br>Carbonate: 0<br>Chloride: 117<br>Chromium: 0.0042<br>Colour: <1<br>Copper: 0.0073<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: 0.9<br>Hardness: 355<br>Iodide: 0.01<br>Iron: 0.0018<br>Lanthanum: <0.0001<br>Lead: 0.0005<br>Magnesium: 58.1<br>Manganese: 0.0002<br>Mercury: <0.00003<br>Molybdenum: 0.0018<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 27.18<br>pH: 7.8<br>Potassium: 2.69<br>Selenium: 0.0027<br>Silica - reactive: 68.3<br>Silver: <0.00002<br>Sodium: 81.8<br>Sulphate: 53.6<br>Total dissolved solids: 602<br>Turbidity: <0.10<br>Uranium: 0.0006<br>Zinc: 0.0064<br>Hardness - English Degrees: 24.85<br>Hardness - French Degrees: 35.5<br>Hardness - German Degrees: 19.88<br>Hardness - International: 355</div>`)[0];
+                popup_ac3080f5ddceabe42ebf9bdcf36eee95.setContent(html_0eb860866415bc28a59c6474b339a278);
+            
+        
+
+        marker_2524f80ddb5a2fd3783a398dda42a238.bindPopup(popup_ac3080f5ddceabe42ebf9bdcf36eee95)
+        ;
+
+        
+    
+    
+            var marker_f42ebcd9eec9284c7b6b507be3706bc8 = L.marker(
+                [-26.7652159, 132.0284826],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_c826e329c9d86f81dacc54a1bbc77b72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f42ebcd9eec9284c7b6b507be3706bc8.setIcon(icon_c826e329c9d86f81dacc54a1bbc77b72);
+        
+    
+        var popup_791a36debe2dfb6434345dd739d1536f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57931fe0200a6fcf69c685164ed47837 = $(`<div id="html_57931fe0200a6fcf69c685164ed47837" style="width: 100.0%; height: 100.0%;">Alkalinity: 86<br>Aluminium - acid soluble: <0.001<br>Antimony: <0.0003<br>Arsenic: 0.00019<br>Barium: 0.0208<br>Beryllium: <0.0002<br>Bicarbonate: 105<br>Boron: 0.256<br>Cadmium: <0.0001<br>Calcium: 19.4<br>Carbonate: 0<br>Chloride: 137<br>Chromium: 0.0006<br>Colour: <1<br>Copper: 0.0175<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: 0.5<br>Hardness: 110<br>Iodide: 0.06<br>Iron: 0.0028<br>Lanthanum: <0.0001<br>Lead: 0.0009<br>Magnesium: 15.0<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>Nickel: 0.0003<br>Nitrate + nitrite as NO3: 17.36<br>pH: 7.6<br>Potassium: 6.21<br>Selenium: 0.0015<br>Silica - reactive: 29.7<br>Silver: <0.00002<br>Sodium: 104<br>Sulphate: 41.1<br>Total dissolved solids: 435<br>Turbidity: <0.10<br>Uranium: 0.0006<br>Zinc: 0.0102<br>Hardness - English Degrees: 7.70<br>Hardness - French Degrees: 11.0<br>Hardness - German Degrees: 6.16<br>Hardness - International: 110</div>`)[0];
+                popup_791a36debe2dfb6434345dd739d1536f.setContent(html_57931fe0200a6fcf69c685164ed47837);
+            
+        
+
+        marker_f42ebcd9eec9284c7b6b507be3706bc8.bindPopup(popup_791a36debe2dfb6434345dd739d1536f)
+        ;
+
+        
+    
+    
+            var marker_79fccfd429168b30fd18241f353c932f = L.marker(
+                [-35.0702968, 139.0111223],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_b7d8f0e69c7ab7bfd1fce72ee1aa991b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_79fccfd429168b30fd18241f353c932f.setIcon(icon_b7d8f0e69c7ab7bfd1fce72ee1aa991b);
+        
+    
+        var popup_3ea4a1184d13787e2d41ef91aa05409a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4df936969a9a70a7e5597565adf842a = $(`<div id="html_c4df936969a9a70a7e5597565adf842a" style="width: 100.0%; height: 100.0%;">Alkalinity: 68<br>Aluminium - acid soluble: 0.015<br>Antimony: <0.0003<br>Arsenic: 0.00041<br>Barium: 0.0414<br>Beryllium: <0.0002<br>Bicarbonate: 83<br>Boron: 0.030<br>Cadmium: <0.0001<br>Calcium: 16.0<br>Carbonate: 0<br>Chloral hydrate: 7.6<br>Chloride: 90<br>Chlorine (free residual): 1.2<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.2<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0267<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 14<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 85<br>Iodide: 0.03<br>Iron: 0.0015<br>Lanthanum: <0.0001<br>Lead: 0.0002<br>Magnesium: 10.86<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>Nickel: 0.0004<br>Nitrate + nitrite as NO3: 0.76<br>Pentachlorophenol: <0.05<br>pH: 7.7<br>Potassium: 4.23<br>Selenium: <0.0001<br>Silica - reactive: 0.67<br>Silver: <0.00002<br>Sodium: 54.4<br>Sulphate: 17.8<br>Total dissolved solids: 264<br>Trichloroacetic acid: 7<br>Trihalomethanes (THMs): 123<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0014<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 5.95<br>Hardness - French Degrees: 8.5<br>Hardness - German Degrees: 4.76<br>Hardness - International: 85</div>`)[0];
+                popup_3ea4a1184d13787e2d41ef91aa05409a.setContent(html_c4df936969a9a70a7e5597565adf842a);
+            
+        
+
+        marker_79fccfd429168b30fd18241f353c932f.bindPopup(popup_3ea4a1184d13787e2d41ef91aa05409a)
+        ;
+
+        
+    
+    
+            var marker_6ea284ed1ada8002f3defff889dfe01e = L.marker(
+                [-36.8391699, 139.8471033],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_2256069e910da57d623246b2a2dbf1dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6ea284ed1ada8002f3defff889dfe01e.setIcon(icon_2256069e910da57d623246b2a2dbf1dd);
+        
+    
+        var popup_30ba34f9fd6bee256caafcca982e239d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9bada469280d4c4bb7dcada51e9ab1c = $(`<div id="html_f9bada469280d4c4bb7dcada51e9ab1c" style="width: 100.0%; height: 100.0%;">Alkalinity: 305<br>Aluminium - acid soluble: 0.002<br>Antimony: <0.0003<br>Arsenic: 0.00014<br>Barium: 0.0543<br>Beryllium: <0.0002<br>Bicarbonate: 372<br>Boron: 0.259<br>Cadmium: <0.0001<br>Calcium: 67.9<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 273<br>Chlorine (free residual): 0.8<br>Chlorine (total residual): 0.9<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0095<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.3<br>Hardness: 249<br>Iodide: 0.02<br>Iron: 0.0042<br>Lanthanum: <0.0001<br>Lead: 0.0003<br>Magnesium: 19.3<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: 0.0002<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 0.10<br>Pentachlorophenol: <0.05<br>pH: 7.5<br>Potassium: 14.7<br>Selenium: <0.0001<br>Silica - reactive: 12.6<br>Silver: <0.00002<br>Sodium: 220<br>Sulphate: 34.0<br>Total dissolved solids: 846<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 37<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0058<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 17.43<br>Hardness - French Degrees: 24.9<br>Hardness - German Degrees: 13.94<br>Hardness - International: 249</div>`)[0];
+                popup_30ba34f9fd6bee256caafcca982e239d.setContent(html_f9bada469280d4c4bb7dcada51e9ab1c);
+            
+        
+
+        marker_6ea284ed1ada8002f3defff889dfe01e.bindPopup(popup_30ba34f9fd6bee256caafcca982e239d)
+        ;
+
+        
+    
+    
+            var marker_191540a1a12a82b47b6bce206e5739d0 = L.marker(
+                [-35.3278498, 140.5167531],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_fcaaea996f40f47ad23073229d5b6753 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_191540a1a12a82b47b6bce206e5739d0.setIcon(icon_fcaaea996f40f47ad23073229d5b6753);
+        
+    
+        var popup_395b89be4eaaa46518ab2734f14ab46c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b88f143d6a3c0a22931a3126a17da6b = $(`<div id="html_9b88f143d6a3c0a22931a3126a17da6b" style="width: 100.0%; height: 100.0%;">Alkalinity: 234<br>Aluminium - acid soluble: 0.001<br>Antimony: <0.0003<br>Arsenic: 0.00631<br>Barium: 0.0058<br>Beryllium: <0.0002<br>Bicarbonate: 286<br>Boron: 0.194<br>Cadmium: <0.0001<br>Calcium: 48.5<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 348<br>Chlorine (free residual): 1.5<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.5<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0078<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.6<br>Hardness: 238<br>Iodide: 0.03<br>Iron: 0.0174<br>Lanthanum: <0.0001<br>Lead: 0.0005<br>Magnesium: 28.5<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: 0.0008<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: <0.014<br>Pentachlorophenol: <0.05<br>pH: 7.8<br>Potassium: 7.80<br>Selenium: <0.0001<br>Silica - reactive: 23.0<br>Silver: <0.00002<br>Sodium: 248<br>Sulphate: 91.2<br>Total dissolved solids: 971<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 19<br>Turbidity: 0.11<br>Uranium: <0.0001<br>Zinc: 0.0067<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 16.66<br>Hardness - French Degrees: 23.8<br>Hardness - German Degrees: 13.33<br>Hardness - International: 238</div>`)[0];
+                popup_395b89be4eaaa46518ab2734f14ab46c.setContent(html_9b88f143d6a3c0a22931a3126a17da6b);
+            
+        
+
+        marker_191540a1a12a82b47b6bce206e5739d0.bindPopup(popup_395b89be4eaaa46518ab2734f14ab46c)
+        ;
+
+        
+    
+    
+            var marker_720eb3c3569e1a8bc094c433bbc315bf = L.marker(
+                [-30.5932071, 138.403104],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_3e2aa4ad59d4f59a6440186ab52f99a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_720eb3c3569e1a8bc094c433bbc315bf.setIcon(icon_3e2aa4ad59d4f59a6440186ab52f99a4);
+        
+    
+        var popup_96d9f3695a9b0194f43fa4980ffac5c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad9a2bb19ce67d4999285547091711a0 = $(`<div id="html_ad9a2bb19ce67d4999285547091711a0" style="width: 100.0%; height: 100.0%;">Alkalinity: 55<br>Aluminium - acid soluble: 0.025<br>Antimony: <0.0003<br>Arsenic: <0.00006<br>Barium: 0.0012<br>Beryllium: <0.0002<br>Bicarbonate: 57<br>Boron: 0.450<br>Cadmium: <0.0001<br>Calcium: 7.10<br>Carbonate: 5<br>Chloral hydrate: <1.0<br>Chloride: 32<br>Chlorine (free residual): 1.2<br>Chlorine (total residual): 1.2<br>Chloroacetic acid: <3<br>Chromium: 0.0002<br>Colour: <1<br>Copper: 0.0018<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 5<br>Iodide: <0.01<br>Iron: 0.0157<br>Lanthanum: <0.0001<br>Lead: <0.0001<br>Magnesium: 0.23<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: <0.0001<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 0.40<br>Pentachlorophenol: <0.05<br>pH: 8.7<br>Potassium: 0.22<br>Selenium: <0.0001<br>Silica - reactive: 1.03<br>Silver: <0.00002<br>Sodium: 40.1<br>Sulphate: 3.3<br>Total dissolved solids: 116<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): <4<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0025<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 0.35<br>Hardness - French Degrees: 0.5<br>Hardness - German Degrees: 0.28<br>Hardness - International: 5</div>`)[0];
+                popup_96d9f3695a9b0194f43fa4980ffac5c0.setContent(html_ad9a2bb19ce67d4999285547091711a0);
+            
+        
+
+        marker_720eb3c3569e1a8bc094c433bbc315bf.bindPopup(popup_96d9f3695a9b0194f43fa4980ffac5c0)
+        ;
+
+        
+    
+    
+            var marker_895059a77feaac447046a91004b76351 = L.marker(
+                [-34.4511348, 140.5696644],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_94003c377e383e1556451747772d89c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_895059a77feaac447046a91004b76351.setIcon(icon_94003c377e383e1556451747772d89c7);
+        
+    
+        var popup_83374f42cbd45e6dc88cae86e735920c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87f99c2d8b549436193bc5d872f8c799 = $(`<div id="html_87f99c2d8b549436193bc5d872f8c799" style="width: 100.0%; height: 100.0%;">Alkalinity: 52<br>Aluminium - acid soluble: 0.017<br>Ammonia - free - as NH3: 0.22<br>Antimony: <0.0003<br>Arsenic: 0.00028<br>Barium: 0.0399<br>Beryllium: <0.0002<br>Bicarbonate: 58<br>Boron: <0.020<br>Cadmium: <0.0001<br>Calcium: 12.03<br>Carbonate: 3<br>Chloride: 63<br>Chlorine (free residual): <0.1<br>Chloramine (mono residual): 3.9<br>Chlorine (total residual): 3.9<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0012<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: 0.9<br>Hardness: 67<br>Iodide: 0.01<br>Iron: 0.0011<br>Lanthanum: <0.0001<br>Lead: 0.0001<br>Magnesium: 8.78<br>Manganese: 0.0014<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>NDMA (N-Nitrosodimethylamine): 8<br>Nickel: 0.0006<br>Nitrate + nitrite as NO3: 0.42<br>pH: 8.8<br>Potassium: 3.83<br>Selenium: <0.0001<br>Silica - reactive: 2.12<br>Silver: <0.00002<br>Sodium: 47.9<br>Sulphate: 41.3<br>Total dissolved solids: 228<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0024<br>Hardness - English Degrees: 4.69<br>Hardness - French Degrees: 6.7<br>Hardness - German Degrees: 3.75<br>Hardness - International: 67</div>`)[0];
+                popup_83374f42cbd45e6dc88cae86e735920c.setContent(html_87f99c2d8b549436193bc5d872f8c799);
+            
+        
+
+        marker_895059a77feaac447046a91004b76351.bindPopup(popup_83374f42cbd45e6dc88cae86e735920c)
+        ;
+
+        
+    
+    
+            var marker_97546aa7bdfcd9a1172b8e019bfa4781 = L.marker(
+                [-36.972322, 140.3694674],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_47876192cb1a5b7ee5c171fc0cbf55cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_97546aa7bdfcd9a1172b8e019bfa4781.setIcon(icon_47876192cb1a5b7ee5c171fc0cbf55cd);
+        
+    
+        var popup_d8a2824c471585377d260de5e9eefebf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6df3eeba0dd8d33c6ad2d6cc4521a089 = $(`<div id="html_6df3eeba0dd8d33c6ad2d6cc4521a089" style="width: 100.0%; height: 100.0%;">Alkalinity: 314<br>Aluminium - acid soluble: 0.001<br>Antimony: <0.0003<br>Arsenic: <0.00006<br>Barium: 0.0282<br>Beryllium: <0.0002<br>Bicarbonate: 383<br>Boron: 0.182<br>Cadmium: <0.0001<br>Calcium: 77.0<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 286<br>Chlorine (free residual): 0.8<br>Chlorine (total residual): 0.9<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0226<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.3<br>Hardness: 317<br>Iodide: 0.03<br>Iron: 0.0092<br>Lanthanum: <0.0001<br>Lead: 0.0009<br>Magnesium: 30.4<br>Manganese: 0.0006<br>Mercury: <0.00003<br>Molybdenum: 0.0006<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 0.04<br>Pentachlorophenol: <0.05<br>pH: 7.6<br>Potassium: 7.24<br>Selenium: <0.0001<br>Silica - reactive: 11.6<br>Silver: <0.00002<br>Sodium: 171<br>Sulphate: 8.4<br>Total dissolved solids: 827<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 127<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0092<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 22.19<br>Hardness - French Degrees: 31.7<br>Hardness - German Degrees: 17.75<br>Hardness - International: 317</div>`)[0];
+                popup_d8a2824c471585377d260de5e9eefebf.setContent(html_6df3eeba0dd8d33c6ad2d6cc4521a089);
+            
+        
+
+        marker_97546aa7bdfcd9a1172b8e019bfa4781.bindPopup(popup_d8a2824c471585377d260de5e9eefebf)
+        ;
+
+        
+    
+    
+            var marker_c4ef4b84f61f2dbdfaeb3a2dea9550a7 = L.marker(
+                [-34.9134482, 139.3125775],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_fbe55b3d3d33b4fc39691a4f641be38e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c4ef4b84f61f2dbdfaeb3a2dea9550a7.setIcon(icon_fbe55b3d3d33b4fc39691a4f641be38e);
+        
+    
+        var popup_bf26f663f63f8f1a71b6cf7061e8a0b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3dee4041bbfb010f94a67321611d55d9 = $(`<div id="html_3dee4041bbfb010f94a67321611d55d9" style="width: 100.0%; height: 100.0%;">Alkalinity: 49<br>Aluminium - acid soluble: 0.020<br>Antimony: <0.0003<br>Arsenic: 0.00038<br>Barium: 0.0414<br>Beryllium: <0.0002<br>Bicarbonate: 60<br>Boron: <0.020<br>Cadmium: <0.0001<br>Calcium: 14.0<br>Carbonate: 0<br>Chloral hydrate: 4.1<br>Chloride: 75<br>Chlorine (free residual): 1.4<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.6<br>Chloroacetic acid: <3<br>Chromium: 0.0002<br>Colour: <1<br>Copper: 0.0258<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 6<br>E. coli: 0<br>Fluoride: 0.9<br>Hardness: 78<br>Iodide: 0.03<br>Iron: 0.0499<br>Lanthanum: <0.0001<br>Lead: 0.0006<br>Magnesium: 10.44<br>Manganese: 0.0095<br>Mercury: 0.00003<br>Molybdenum: 0.0004<br>Nickel: 0.0008<br>Nitrate + nitrite as NO3: 1.54<br>Pentachlorophenol: <0.05<br>pH: 7.4<br>Potassium: 4.26<br>Selenium: <0.0001<br>Silica - reactive: 2.44<br>Silver: <0.00002<br>Sodium: 52.8<br>Sulphate: 41.7<br>Total dissolved solids: 255<br>Trichloroacetic acid: 4<br>Trihalomethanes (THMs): 91<br>Turbidity: 0.12<br>Uranium: <0.0001<br>Zinc: 0.0078<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 5.46<br>Hardness - French Degrees: 7.8<br>Hardness - German Degrees: 4.37<br>Hardness - International: 78</div>`)[0];
+                popup_bf26f663f63f8f1a71b6cf7061e8a0b6.setContent(html_3dee4041bbfb010f94a67321611d55d9);
+            
+        
+
+        marker_c4ef4b84f61f2dbdfaeb3a2dea9550a7.bindPopup(popup_bf26f663f63f8f1a71b6cf7061e8a0b6)
+        ;
+
+        
+    
+    
+            var marker_252c92f61dc94c95151074514b0d7b4b = L.marker(
+                [-27.30312, 133.6217946],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_1c4e6b5db0182bf438e450311935fc60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_252c92f61dc94c95151074514b0d7b4b.setIcon(icon_1c4e6b5db0182bf438e450311935fc60);
+        
+    
+        var popup_227859fcca6275021c58136085820b1c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa03279efa1ba9db40f3929de5f2c5c1 = $(`<div id="html_fa03279efa1ba9db40f3929de5f2c5c1" style="width: 100.0%; height: 100.0%;">Alkalinity: 67<br>Aluminium - acid soluble: 0.003<br>Antimony: <0.0003<br>Arsenic: 0.00069<br>Barium: 0.0243<br>Beryllium: <0.0002<br>Bicarbonate: 77<br>Boron: 0.318<br>Cadmium: <0.0001<br>Calcium: 15.0<br>Carbonate: 2<br>Chloral hydrate: <1.0<br>Chloride: 32<br>Chlorine (free residual): 1.0<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.1<br>Chloroacetic acid: <3<br>Chromium: 0.0014<br>Colour: <1<br>Copper: 0.0058<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.25<br>Hardness: 51<br>Iodide: 0.03<br>Iron: 0.0015<br>Lanthanum: <0.0001<br>Lead: 0.0001<br>Magnesium: 3.20<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0007<br>Nickel: 0.0004<br>Nitrate + nitrite as NO3: 20.59<br>Pentachlorophenol: <0.05<br>pH: 8.4<br>Potassium: 7.60<br>Selenium: 0.0005<br>Silica - reactive: 15.0<br>Silver: <0.00002<br>Sodium: 34.2<br>Sulphate: 14.5<br>Total dissolved solids: 164<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 25<br>Turbidity: <0.10<br>Uranium: 0.0004<br>Zinc: 0.0034<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 3.57<br>Hardness - French Degrees: 5.10<br>Hardness - German Degrees: 2.87<br>Hardness - International: 51</div>`)[0];
+                popup_227859fcca6275021c58136085820b1c.setContent(html_fa03279efa1ba9db40f3929de5f2c5c1);
+            
+        
+
+        marker_252c92f61dc94c95151074514b0d7b4b.bindPopup(popup_227859fcca6275021c58136085820b1c)
+        ;
+
+        
+    
+    
+            var marker_f9f85dabc632bf6685a192aa03568af0 = L.marker(
+                [42.4564323, -71.064182],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_c5d5d0ac1282764414d04e0cc9d65153 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f9f85dabc632bf6685a192aa03568af0.setIcon(icon_c5d5d0ac1282764414d04e0cc9d65153);
+        
+    
+        var popup_6222c32e3d29fb64f10314d58958f7e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f21c8c8be14562b7a6ee0d42feccedbf = $(`<div id="html_f21c8c8be14562b7a6ee0d42feccedbf" style="width: 100.0%; height: 100.0%;">Alkalinity: 294<br>Aluminium - acid soluble: 0.003<br>Antimony: <0.0003<br>Arsenic: 0.00064<br>Barium: 0.1004<br>Beryllium: <0.0002<br>Bicarbonate: 359<br>Boron: 0.567<br>Cadmium: <0.0001<br>Calcium: 60.8<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 567<br>Chlorine (free residual): 1.0<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.0<br>Chloroacetic acid: <3<br>Chromium: 0.0021<br>Colour: <1<br>Copper: 0.0141<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 1.0<br>Hardness: 361<br>Iodide: 0.17<br>Iron: 0.0041<br>Lanthanum: <0.0001<br>Lead: 0.0003<br>Magnesium: 50.7<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0014<br>Nickel: 0.0006<br>Nitrate + nitrite as NO3: 1.95<br>Pentachlorophenol: <0.05<br>pH: 7.3<br>Potassium: 7.84<br>Selenium: 0.0030<br>Silica - reactive: 14.3<br>Silver: <0.00002<br>Sodium: 421<br>Sulphate: 172.0<br>Total dissolved solids: 1,535<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 5<br>Turbidity: <0.10<br>Uranium: 0.0035<br>Zinc: 0.0073<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 25.27<br>Hardness - French Degrees: 36.1<br>Hardness - German Degrees: 20.22<br>Hardness - International: 361</div>`)[0];
+                popup_6222c32e3d29fb64f10314d58958f7e7.setContent(html_f21c8c8be14562b7a6ee0d42feccedbf);
+            
+        
+
+        marker_f9f85dabc632bf6685a192aa03568af0.bindPopup(popup_6222c32e3d29fb64f10314d58958f7e7)
+        ;
+
+        
+    
+    
+            var marker_c2f4e9ce15ecaa7c280acee0fb9c89d8 = L.marker(
+                [48.4343071, -96.1640721],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_09a68eb0a695e7f1dbf5a773739b97a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c2f4e9ce15ecaa7c280acee0fb9c89d8.setIcon(icon_09a68eb0a695e7f1dbf5a773739b97a9);
+        
+    
+        var popup_aa75e740a061786c6905bf32570613e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a27ae971e050918811dcef898b94548f = $(`<div id="html_a27ae971e050918811dcef898b94548f" style="width: 100.0%; height: 100.0%;">Alkalinity: 24<br>Aluminium - acid soluble: 0.034<br>Antimony: <0.0003<br>Arsenic: 0.00018<br>Barium: 0.0173<br>Beryllium: <0.0002<br>Bicarbonate: 29<br>Boron: 0.055<br>Cadmium: <0.0001<br>Calcium: 13.01<br>Carbonate: 0<br>Chloral hydrate: 3.5<br>Chloride: 276<br>Chlorine (free residual): 0.8<br>Chlorine (total residual): 0.8<br>Chloroacetic acid: <3<br>Chromium: 0.0001<br>Colour: <1<br>Copper: 0.0106<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 6<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 97<br>Iodide: <0.01<br>Iron: 0.0172<br>Lanthanum: <0.0001<br>Lead: 0.0002<br>Magnesium: 15.62<br>Manganese: 0.0026<br>Mercury: <0.00003<br>Molybdenum: <0.0001<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 2.46<br>Pentachlorophenol: <0.05<br>pH: 7.5<br>Potassium: 3.01<br>Selenium: <0.0001<br>Silica - reactive: 3.10<br>Silver: <0.00002<br>Sodium: 171<br>Sulphate: 77.3<br>Total dissolved solids: 634<br>Trichloroacetic acid: 1<br>Trihalomethanes (THMs): 160<br>Turbidity: 0.11<br>Uranium: <0.0001<br>Zinc: 0.0059<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 6.79<br>Hardness - French Degrees: 9.7<br>Hardness - German Degrees: 5.43<br>Hardness - International: 97</div>`)[0];
+                popup_aa75e740a061786c6905bf32570613e2.setContent(html_a27ae971e050918811dcef898b94548f);
+            
+        
+
+        marker_c2f4e9ce15ecaa7c280acee0fb9c89d8.bindPopup(popup_aa75e740a061786c6905bf32570613e2)
+        ;
+
+        
+    
+    
+            var marker_2a14e1491f53b372747615c090c0af04 = L.marker(
+                [-37.5949379, 140.3526512],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_a0dee84cf32039563d87dfdc83ec082a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2a14e1491f53b372747615c090c0af04.setIcon(icon_a0dee84cf32039563d87dfdc83ec082a);
+        
+    
+        var popup_5ac17f8cfabdf1d9e8962ae387f44610 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84caf76e106e6057ebb972701153e124 = $(`<div id="html_84caf76e106e6057ebb972701153e124" style="width: 100.0%; height: 100.0%;">Alkalinity: 293<br>Aluminium - acid soluble: 0.001<br>Antimony: <0.0003<br>Arsenic: 0.00201<br>Barium: 0.0056<br>Beryllium: <0.0002<br>Bicarbonate: 357<br>Boron: 0.038<br>Cadmium: <0.0001<br>Calcium: 83.4<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 142<br>Chlorine (free residual): 0.8<br>Chlorine (total residual): 0.8<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0314<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 1.0<br>Hardness: 374<br>Iodide: <0.01<br>Iron: 0.0122<br>Lanthanum: <0.0001<br>Lead: 0.0014<br>Magnesium: 40.3<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: 0.0005<br>Nickel: 0.0011<br>Nitrate + nitrite as NO3: 0.26<br>Pentachlorophenol: <0.05<br>pH: 7.5<br>Potassium: 4.95<br>Selenium: 0.0001<br>Silica - reactive: 28.4<br>Silver: <0.00002<br>Sodium: 84.9<br>Sulphate: 73.6<br>Total dissolved solids: 629<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 72<br>Turbidity: 0.13<br>Uranium: 0.0003<br>Zinc: 0.0059<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 26.18<br>Hardness - French Degrees: 37.4<br>Hardness - German Degrees: 20.94<br>Hardness - International: 374</div>`)[0];
+                popup_5ac17f8cfabdf1d9e8962ae387f44610.setContent(html_84caf76e106e6057ebb972701153e124);
+            
+        
+
+        marker_2a14e1491f53b372747615c090c0af04.bindPopup(popup_5ac17f8cfabdf1d9e8962ae387f44610)
+        ;
+
+        
+    
+    
+            var marker_1e713a14e7e01b23a871573b90902b26 = L.marker(
+                [-27.0071006, 132.7082941],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_958ba32d0cc6365135944bc3362cbe58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1e713a14e7e01b23a871573b90902b26.setIcon(icon_958ba32d0cc6365135944bc3362cbe58);
+        
+    
+        var popup_fcb8463ce1d52de30d33cbd80b4211b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3fdbec8c0984677edf2fbea3709a6f7e = $(`<div id="html_3fdbec8c0984677edf2fbea3709a6f7e" style="width: 100.0%; height: 100.0%;">Alkalinity: 65<br>Aluminium - acid soluble: 0.002<br>Antimony: <0.0003<br>Arsenic: 0.00035<br>Barium: 0.0095<br>Beryllium: <0.0002<br>Bicarbonate: 80<br>Boron: 0.386<br>Cadmium: <0.0001<br>Calcium: 11.58<br>Carbonate: 0<br>Chloride: 96<br>Chromium: 0.0007<br>Colour: <1<br>Copper: 0.0218<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: 0.5<br>Hardness: 65<br>Iodide: 0.05<br>Iron: 0.0019<br>Lanthanum: <0.0001<br>Lead: 0.0014<br>Magnesium: 8.70<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0013<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 22.02<br>pH: 7.5<br>Potassium: 6.34<br>Selenium: 0.0012<br>Silica - reactive: 14.65<br>Silver: <0.00002<br>Sodium: 85.1<br>Sulphate: 36.1<br>Total dissolved solids: 336<br>Turbidity: <0.10<br>Uranium: 0.0007<br>Zinc: 0.0067<br>Hardness - English Degrees: 4.55<br>Hardness - French Degrees: 6.5<br>Hardness - German Degrees: 3.64<br>Hardness - International: 65</div>`)[0];
+                popup_fcb8463ce1d52de30d33cbd80b4211b8.setContent(html_3fdbec8c0984677edf2fbea3709a6f7e);
+            
+        
+
+        marker_1e713a14e7e01b23a871573b90902b26.bindPopup(popup_fcb8463ce1d52de30d33cbd80b4211b8)
+        ;
+
+        
+    
+    
+            var marker_75ef0321afdc13aebc381f98fb3fb108 = L.marker(
+                [-34.27626875, 140.30918007317726],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_8e7f5dcc668d79a712e55110f2d6871d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_75ef0321afdc13aebc381f98fb3fb108.setIcon(icon_8e7f5dcc668d79a712e55110f2d6871d);
+        
+    
+        var popup_a320d34b47b40339372e4c651ad1a3e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_380d753ab0a4fba545415ebf896e66bb = $(`<div id="html_380d753ab0a4fba545415ebf896e66bb" style="width: 100.0%; height: 100.0%;">Alkalinity: 60<br>Aluminium - acid soluble: 0.017<br>Antimony: <0.0003<br>Arsenic: 0.00032<br>Barium: 0.0390<br>Beryllium: <0.0002<br>Bicarbonate: 73<br>Boron: 0.021<br>Cadmium: <0.0001<br>Calcium: 13.1<br>Carbonate: 0<br>Chloral hydrate: 11.7<br>Chloride: 77<br>Chlorine (free residual): 1.0<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.1<br>Chlorite: <0.01<br>Chloroacetic acid: 3<br>Chromium: 0.0002<br>Colour: <1<br>Copper: 0.0076<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 19<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 68<br>Iodide: <0.01<br>Iron: 0.0049<br>Lanthanum: <0.0001<br>Lead: 0.0004<br>Magnesium: 8.52<br>Manganese: 0.0040<br>Mercury: <0.00003<br>Molybdenum: 0.0003<br>Nickel: 0.0004<br>Nitrate + nitrite as NO3: 0.77<br>Pentachlorophenol: <0.05<br>pH: 7.9<br>Potassium: 3.67<br>Selenium: <0.0001<br>Silica - reactive: 1.18<br>Silver: <0.00002<br>Sodium: 46.8<br>Sulphate: 13.5<br>Total dissolved solids: 231<br>Trichloroacetic acid: 12<br>Trihalomethanes (THMs): 102<br>Turbidity: 0.10<br>Uranium: <0.0001<br>Zinc: 0.0033<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 4.76<br>Hardness - French Degrees: 6.8<br>Hardness - German Degrees: 3.81<br>Hardness - International: 68</div>`)[0];
+                popup_a320d34b47b40339372e4c651ad1a3e6.setContent(html_380d753ab0a4fba545415ebf896e66bb);
+            
+        
+
+        marker_75ef0321afdc13aebc381f98fb3fb108.bindPopup(popup_a320d34b47b40339372e4c651ad1a3e6)
+        ;
+
+        
+    
+    
+            var marker_2a299edcb5da392bc0765e55a18eb954 = L.marker(
+                [-34.539947657631856, 135.47223757306145],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_69c325b0a5ad2ba2fb37b50864ee2718 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2a299edcb5da392bc0765e55a18eb954.setIcon(icon_69c325b0a5ad2ba2fb37b50864ee2718);
+        
+    
+        var popup_d8398007f55af0340bf00be27069bc55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e104e8dd756848f9ebccdb08c89ca1fb = $(`<div id="html_e104e8dd756848f9ebccdb08c89ca1fb" style="width: 100.0%; height: 100.0%;">Alkalinity: 49<br>Aluminium - acid soluble: 0.026<br>Antimony: <0.0003<br>Arsenic: 0.00041<br>Barium: 0.0418<br>Beryllium: <0.0002<br>Bicarbonate: 59<br>Boron: 0.031<br>Cadmium: <0.0001<br>Calcium: 22.6<br>Carbonate: <1<br>Chloral hydrate: 18.5<br>Chloride: 93<br>Chlorine (free residual): 0.9<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 0.9<br>Chloroacetic acid: 8<br>Chromium: 0.0002<br>Colour: <1<br>Copper: 0.0544<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 30<br>E. coli: 0<br>Fluoride: 0.6<br>Hardness: 91<br>Iodide: <0.01<br>Iron: 0.0842<br>Lanthanum: <0.0001<br>Lead: 0.0011<br>Magnesium: 8.50<br>Manganese: 0.0068<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>NDMA (N-Nitrosodimethylamine): <4<br>Nickel: 0.0004<br>Nitrate + nitrite as NO3: 1.90<br>Pentachlorophenol: <0.05<br>pH: 7.7<br>Potassium: 4.42<br>Selenium: <0.0001<br>Silica - reactive: 1.35<br>Silver: <0.00002<br>Sodium: 63.0<br>Sulphate: 53.3<br>Total dissolved solids: 299<br>Trichloroacetic acid: 12<br>Trihalomethanes (THMs): 126<br>Turbidity: 0.61<br>Uranium: <0.0001<br>Zinc: 0.0268<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 6.37<br>Hardness - French Degrees: 9.1<br>Hardness - German Degrees: 5.10<br>Hardness - International: 91</div>`)[0];
+                popup_d8398007f55af0340bf00be27069bc55.setContent(html_e104e8dd756848f9ebccdb08c89ca1fb);
+            
+        
+
+        marker_2a299edcb5da392bc0765e55a18eb954.bindPopup(popup_d8398007f55af0340bf00be27069bc55)
+        ;
+
+        
+    
+    
+            var marker_4ed1b70f41a061369c371552c00da0bd = L.marker(
+                [40.7717882, -73.7347171],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_6922d74ef00f71b1a12d1e106e2a5a62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4ed1b70f41a061369c371552c00da0bd.setIcon(icon_6922d74ef00f71b1a12d1e106e2a5a62);
+        
+    
+        var popup_e8c938f468ffc916634b2fd30707472c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1eb42eab738b53563cd6491e1646a0d6 = $(`<div id="html_1eb42eab738b53563cd6491e1646a0d6" style="width: 100.0%; height: 100.0%;">Alkalinity: 58<br>Aluminium - acid soluble: 0.025<br>Ammonia - free - as NH3: 0.16<br>Antimony: <0.0003<br>Arsenic: 0.00035<br>Barium: 0.0402<br>Beryllium: <0.0002<br>Bicarbonate: 63<br>Boron: 0.032<br>Cadmium: <0.0001<br>Calcium: 15.1<br>Carbonate: 4<br>Chloride: 79<br>Chlorine (free residual): <0.1<br>Chloramine (mono residual): 2.9<br>Chlorine (total residual): 2.9<br>Chromium: 0.0001<br>Colour: 1<br>Copper: 0.0058<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: 0.54<br>Hardness: 77<br>Iodide: 0.02<br>Iron: 0.0042<br>Lanthanum: <0.0001<br>Lead: 0.0002<br>Magnesium: 9.65<br>Manganese: 0.0057<br>Mercury: <0.00003<br>Molybdenum: 0.0003<br>NDMA (N-Nitrosodimethylamine): 5<br>Nickel: 0.0004<br>Nitrate + nitrite as NO3: 0.92<br>pH: 8.7<br>Potassium: 4.19<br>Selenium: <0.0001<br>Silica - reactive: 0.96<br>Silver: <0.00002<br>Sodium: 61.8<br>Sulphate: 52.8<br>Total dissolved solids: 281<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0023<br>Hardness - English Degrees: 5.39<br>Hardness - French Degrees: 7.7<br>Hardness - German Degrees: 4.31<br>Hardness - International: 77</div>`)[0];
+                popup_e8c938f468ffc916634b2fd30707472c.setContent(html_1eb42eab738b53563cd6491e1646a0d6);
+            
+        
+
+        marker_4ed1b70f41a061369c371552c00da0bd.bindPopup(popup_e8c938f468ffc916634b2fd30707472c)
+        ;
+
+        
+    
+    
+            var marker_2802625824e57254fbac03f39f5dfab9 = L.marker(
+                [-37.5939586, 140.51761559809293],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_d435a707bf1015e0464708826f927dcf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2802625824e57254fbac03f39f5dfab9.setIcon(icon_d435a707bf1015e0464708826f927dcf);
+        
+    
+        var popup_44b50ff9bf5d6264820a6e259584b560 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8e34241e893a3255101100444deb66f = $(`<div id="html_a8e34241e893a3255101100444deb66f" style="width: 100.0%; height: 100.0%;">Alkalinity: 285<br>Aluminium - acid soluble: 0.004<br>Antimony: <0.0003<br>Arsenic: 0.00073<br>Barium: 0.0106<br>Beryllium: <0.0002<br>Bicarbonate: 348<br>Boron: 0.022<br>Cadmium: <0.0001<br>Calcium: 92.4<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 86<br>Chlorine (free residual): 0.8<br>Chlorine (total residual): 0.7<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: 0.0010<br>Colour: <1<br>Copper: 0.0078<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.2<br>Hardness: 297<br>Iodide: 0.02<br>Iron: < 0.001<br>Lanthanum: <0.0001<br>Lead: 0.0003<br>Magnesium: 16.1<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: <0.0001<br>Nickel: 0.0006<br>Nitrate + nitrite as NO3: 3.89<br>Pentachlorophenol: <0.05<br>pH: 7.8<br>Potassium: 1.96<br>Selenium: 0.0004<br>Silica - reactive: 22.0<br>Silver: <0.00002<br>Sodium: 48.6<br>Sulphate: 9.0<br>Total dissolved solids: 448<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 7<br>Turbidity: <0.10<br>Uranium: 0.0003<br>Zinc: 0.0074<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 20.79<br>Hardness - French Degrees: 29.7<br>Hardness - German Degrees: 16.63<br>Hardness - International: 297</div>`)[0];
+                popup_44b50ff9bf5d6264820a6e259584b560.setContent(html_a8e34241e893a3255101100444deb66f);
+            
+        
+
+        marker_2802625824e57254fbac03f39f5dfab9.bindPopup(popup_44b50ff9bf5d6264820a6e259584b560)
+        ;
+
+        
+    
+    
+            var marker_94ac84c164e0bce9f64d221dbaa5dc60 = L.marker(
+                [-35.3481504, 138.6205654],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_41c91a51f1f0214583d303f796b39796 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_94ac84c164e0bce9f64d221dbaa5dc60.setIcon(icon_41c91a51f1f0214583d303f796b39796);
+        
+    
+        var popup_f868638e7c99671de29e31c897a98e30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_437d027766bdc17585a33eaf42e5a616 = $(`<div id="html_437d027766bdc17585a33eaf42e5a616" style="width: 100.0%; height: 100.0%;">Alkalinity: 117<br>Aluminium - acid soluble: <0.001<br>Antimony: <0.0003<br>Arsenic: 0.00030<br>Barium: 0.0154<br>Beryllium: <0.0002<br>Bicarbonate: 143<br>Boron: <0.020<br>Cadmium: <0.0001<br>Calcium: 12.2<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 58<br>Chlorine (free residual): 1.1<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.2<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: 0.0002<br>Colour: <1<br>Copper: 0.0034<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.2<br>Hardness: 58<br>Iodide: 0.04<br>Iron: 0.0021<br>Lanthanum: <0.0001<br>Lead: <0.0001<br>Magnesium: 6.41<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: <0.0001<br>Nickel: 0.0006<br>Nitrate + nitrite as NO3: 0.39<br>Pentachlorophenol: <0.05<br>pH: 7.7<br>Potassium: 2.56<br>Selenium: <0.0001<br>Silica - reactive: 19.2<br>Silver: <0.00002<br>Sodium: 64.3<br>Sulphate: 9.5<br>Total dissolved solids: 241<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): <4<br>Turbidity: <0.10<br>Uranium: 0.0004<br>Zinc: 0.0023<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 4.06<br>Hardness - French Degrees: 5.8<br>Hardness - German Degrees: 3.25<br>Hardness - International: 58</div>`)[0];
+                popup_f868638e7c99671de29e31c897a98e30.setContent(html_437d027766bdc17585a33eaf42e5a616);
+            
+        
+
+        marker_94ac84c164e0bce9f64d221dbaa5dc60.bindPopup(popup_f868638e7c99671de29e31c897a98e30)
+        ;
+
+        
+    
+    
+            var marker_306bb57d75fee0c3e85228971d641c74 = L.marker(
+                [-37.8301386, 140.7842627],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_48bce811e1f3502b280a0bd1176bdce7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_306bb57d75fee0c3e85228971d641c74.setIcon(icon_48bce811e1f3502b280a0bd1176bdce7);
+        
+    
+        var popup_c227ed793789f369d5db5ec5ff8e1ae4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ea391b57ede627ea09868e4c726e85a = $(`<div id="html_2ea391b57ede627ea09868e4c726e85a" style="width: 100.0%; height: 100.0%;">Alkalinity: 171<br>Aluminium - acid soluble: <0.001<br>Antimony: <0.0003<br>Arsenic: 0.00068<br>Barium: 0.0047<br>Beryllium: <0.0002<br>Bicarbonate: 209<br>Boron: 0.036<br>Cadmium: <0.0001<br>Calcium: 42.4<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 80<br>Chlorine (free residual): 1.2<br>Chlorine (total residual): 1.2<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0078<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.9<br>Hardness: 185<br>Iodide: <0.01<br>Iron: 0.0010<br>Lanthanum: <0.0001<br>Lead: 0.0003<br>Magnesium: 19.3<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0008<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 12.06<br>Pentachlorophenol: <0.05<br>pH: 8.1<br>Potassium: 2.91<br>Selenium: 0.0005<br>Silica - reactive: 16.7<br>Silver: <0.00002<br>Sodium: 57.0<br>Sulphate: 15.2<br>Total dissolved solids: 356<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 21<br>Turbidity: 0.13<br>Uranium: 0.0003<br>Zinc: 0.0086<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 12.95<br>Hardness - French Degrees: 18.5<br>Hardness - German Degrees: 10.36<br>Hardness - International: 185</div>`)[0];
+                popup_c227ed793789f369d5db5ec5ff8e1ae4.setContent(html_2ea391b57ede627ea09868e4c726e85a);
+            
+        
+
+        marker_306bb57d75fee0c3e85228971d641c74.bindPopup(popup_c227ed793789f369d5db5ec5ff8e1ae4)
+        ;
+
+        
+    
+    
+            var marker_7efd8366073b48e74e00899429bece40 = L.marker(
+                [33.1570582, -94.9694007],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_5a832c9f15fbc0c4b439fbf5ee2f9bef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7efd8366073b48e74e00899429bece40.setIcon(icon_5a832c9f15fbc0c4b439fbf5ee2f9bef);
+        
+    
+        var popup_dfee90f68d43a1eaa952b2d919126d5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30ef7ad840c1d3ecb475e1871923a491 = $(`<div id="html_30ef7ad840c1d3ecb475e1871923a491" style="width: 100.0%; height: 100.0%;">Alkalinity: 57<br>Aluminium - acid soluble: 0.007<br>Antimony: <0.0003<br>Arsenic: 0.00051<br>Barium: 0.0464<br>Beryllium: <0.0002<br>Bicarbonate: 70<br>Boron: <0.020<br>Cadmium: <0.0001<br>Calcium: 14.9<br>Carbonate: 0<br>Chloral hydrate: 11.7<br>Chloride: 90<br>Chlorine (free residual): 1.1<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.2<br>Chloroacetic acid: 5<br>Chromium: 0.0002<br>Colour: <1<br>Copper: 0.0155<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 24<br>E. coli: 0<br>Fluoride: 0.9<br>Hardness: 84<br>Iodide: <0.01<br>Iron: 0.0020<br>Lanthanum: <0.0001<br>Lead: 0.0004<br>Magnesium: 11.3<br>Manganese: 0.0011<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>Nickel: 0.0009<br>Nitrate + nitrite as NO3: 0.72<br>Pentachlorophenol: <0.05<br>pH: 7.3<br>Potassium: 4.18<br>Selenium: <0.0001<br>Silica - reactive: 0.82<br>Silver: <0.00002<br>Sodium: 62.1<br>Sulphate: 40.5<br>Total dissolved solids: 290<br>Trichloroacetic acid: 26<br>Trihalomethanes (THMs): 170<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0087<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 5.88<br>Hardness - French Degrees: 8.4<br>Hardness - German Degrees: 4.70<br>Hardness - International: 84</div>`)[0];
+                popup_dfee90f68d43a1eaa952b2d919126d5d.setContent(html_30ef7ad840c1d3ecb475e1871923a491);
+            
+        
+
+        marker_7efd8366073b48e74e00899429bece40.bindPopup(popup_dfee90f68d43a1eaa952b2d919126d5d)
+        ;
+
+        
+    
+    
+            var marker_05945894ab522ad4cb4b3b040ee4b871 = L.marker(
+                [-26.1597555, 130.1830054],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_5eed3cca69711bc4a83d26d7fea61d03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_05945894ab522ad4cb4b3b040ee4b871.setIcon(icon_5eed3cca69711bc4a83d26d7fea61d03);
+        
+    
+        var popup_16cbe9aa484e87e47f5dd9701d7c44cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c98206ef64ae350adb9805ecfa749fc = $(`<div id="html_1c98206ef64ae350adb9805ecfa749fc" style="width: 100.0%; height: 100.0%;">Alkalinity: 106<br>Aluminium - acid soluble: 0.001<br>Antimony: <0.0003<br>Arsenic: 0.00009<br>Barium: 0.0221<br>Beryllium: <0.0002<br>Bicarbonate: 130<br>Boron: 0.252<br>Cadmium: <0.0001<br>Calcium: 14.3<br>Carbonate: 0<br>Chloride: 65<br>Chromium: 0.0004<br>Colour: <1<br>Copper: 0.0182<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: 0.6<br>Hardness: 92<br>Iodide: 0.06<br>Iron: 0.0038<br>Lanthanum: <0.0001<br>Lead: 0.0010<br>Magnesium: 13.6<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0002<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 5.57<br>pH: 7.8<br>Potassium: 3.54<br>Selenium: 0.0010<br>Silica - reactive: 16.9<br>Silver: <0.00002<br>Sodium: 62.0<br>Sulphate: 20.2<br>Total dissolved solids: 293<br>Turbidity: <0.10<br>Uranium: 0.0005<br>Zinc: 0.0043<br>Hardness - English Degrees: 6.44<br>Hardness - French Degrees: 9.2<br>Hardness - German Degrees: 5.15<br>Hardness - International: 92</div>`)[0];
+                popup_16cbe9aa484e87e47f5dd9701d7c44cb.setContent(html_1c98206ef64ae350adb9805ecfa749fc);
+            
+        
+
+        marker_05945894ab522ad4cb4b3b040ee4b871.bindPopup(popup_16cbe9aa484e87e47f5dd9701d7c44cb)
+        ;
+
+        
+    
+    
+            var marker_9f54776e886a97f98606729e3b95ccd9 = L.marker(
+                [-35.1309451, 139.2651638],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_c867e7e79b21ec7b63017521010aea3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9f54776e886a97f98606729e3b95ccd9.setIcon(icon_c867e7e79b21ec7b63017521010aea3e);
+        
+    
+        var popup_deaac2e143cde82ebce1e4ae0f982c8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6682b4f3ef0f2227614db5d2d0020f06 = $(`<div id="html_6682b4f3ef0f2227614db5d2d0020f06" style="width: 100.0%; height: 100.0%;">Alkalinity: 57<br>Aluminium - acid soluble: 0.028<br>Antimony: <0.0003<br>Arsenic: 0.00038<br>Barium: 0.0438<br>Beryllium: <0.0002<br>Bicarbonate: 70<br>Boron: 0.024<br>Cadmium: <0.0001<br>Calcium: 19.1<br>Carbonate: 0<br>Chloral hydrate: 8.9<br>Chloride: 87<br>Chlorine (free residual): 2.2<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 2.3<br>Chloroacetic acid: <3<br>Chromium: 0.0001<br>Colour: <1<br>Copper: 0.0181<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 14<br>E. coli: 0<br>Fluoride: 0.9<br>Hardness: 94<br>Iodide: 0.02<br>Iron: 0.0053<br>Lanthanum: <0.0001<br>Lead: 0.0002<br>Magnesium: 11.18<br>Manganese: 0.0041<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>Nickel: 0.0006<br>Nitrate + nitrite as NO3: 0.60<br>Pentachlorophenol: <0.05<br>pH: 7.5<br>Potassium: 4.26<br>Selenium: <0.0001<br>Silica - reactive: 1.12<br>Silver: <0.00002<br>Sodium: 59.1<br>Sulphate: 48.1<br>Total dissolved solids: 290<br>Trichloroacetic acid: 10<br>Trihalomethanes (THMs): 148<br>Turbidity: 0.13<br>Uranium: <0.0001<br>Zinc: 0.0044<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 6.58<br>Hardness - French Degrees: 9.4<br>Hardness - German Degrees: 5.26<br>Hardness - International: 94</div>`)[0];
+                popup_deaac2e143cde82ebce1e4ae0f982c8f.setContent(html_6682b4f3ef0f2227614db5d2d0020f06);
+            
+        
+
+        marker_9f54776e886a97f98606729e3b95ccd9.bindPopup(popup_deaac2e143cde82ebce1e4ae0f982c8f)
+        ;
+
+        
+    
+    
+            var marker_4c509626e930503fb4d28e276aec308c = L.marker(
+                [-35.0405708, 139.3556877],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_7796d9dab1c4627f15ee8108711921af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4c509626e930503fb4d28e276aec308c.setIcon(icon_7796d9dab1c4627f15ee8108711921af);
+        
+    
+        var popup_48a51d8a0fcb14af802d8842c9d6862d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b59f4ae7070c5e280ad48ed71178d25c = $(`<div id="html_b59f4ae7070c5e280ad48ed71178d25c" style="width: 100.0%; height: 100.0%;">Alkalinity: 71<br>Aluminium - acid soluble: 0.011<br>Antimony: <0.0003<br>Arsenic: 0.00041<br>Barium: 0.0421<br>Beryllium: <0.0002<br>Bicarbonate: 87<br>Boron: 0.032<br>Cadmium: <0.0001<br>Calcium: 15.5<br>Carbonate: 0<br>Chloral hydrate: 9.1<br>Chloride: 90<br>Chlorine (free residual): 1.7<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.7<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0412<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 14<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 84<br>Iodide: 0.03<br>Iron: 0.0094<br>Lanthanum: <0.0001<br>Lead: 0.0003<br>Magnesium: 10.97<br>Manganese: 0.0013<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>Nickel: 0.0006<br>Nitrate + nitrite as NO3: 0.94<br>Pentachlorophenol: <0.05<br>pH: 7.6<br>Potassium: 4.28<br>Selenium: <0.0001<br>Silica - reactive: 0.80<br>Silver: <0.00002<br>Sodium: 61.8<br>Sulphate: 18.2<br>Total dissolved solids: 276<br>Trichloroacetic acid: 6<br>Trihalomethanes (THMs): 152<br>Turbidity: 0.16<br>Uranium: <0.0001<br>Zinc: 0.0101<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 5.88<br>Hardness - French Degrees: 8.4<br>Hardness - German Degrees: 4.70<br>Hardness - International: 84</div>`)[0];
+                popup_48a51d8a0fcb14af802d8842c9d6862d.setContent(html_b59f4ae7070c5e280ad48ed71178d25c);
+            
+        
+
+        marker_4c509626e930503fb4d28e276aec308c.bindPopup(popup_48a51d8a0fcb14af802d8842c9d6862d)
+        ;
+
+        
+    
+    
+            var marker_ec7eb7ff11d8445ada27e18f53f039f2 = L.marker(
+                [-35.3912659, 138.464815],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_19e12e732e27f56f244aa356f0f017d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ec7eb7ff11d8445ada27e18f53f039f2.setIcon(icon_19e12e732e27f56f244aa356f0f017d8);
+        
+    
+        var popup_7fac53e958f10e60ee8360a394795234 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b025d9dc9a56b839646d710ac73b9fc5 = $(`<div id="html_b025d9dc9a56b839646d710ac73b9fc5" style="width: 100.0%; height: 100.0%;">Alkalinity: 73<br>Aluminium - acid soluble: 0.047<br>Ammonia - free - as NH3: 0.24<br>Antimony: <0.0003<br>Arsenic: 0.00046<br>Barium: 0.0239<br>Beryllium: <0.0002<br>Bicarbonate: 83<br>Boron: 0.035<br>Cadmium: <0.0001<br>Calcium: 27.1<br>Carbonate: 3<br>Chloride: 142<br>Chlorine (free residual): <0.1<br>Chloramine (mono residual): 2.8<br>Chlorine (total residual): 2.8<br>Chromium: <0.0001<br>Colour: 3<br>Copper: 0.0114<br>Cyanide as CN: <0.05<br>E. coli: 99.7%<br>Fluoride: 0.75<br>Hardness: 128<br>Iodide: 0.02<br>Iron: 0.0033<br>Lanthanum: <0.0001<br>Lead: 0.0001<br>Magnesium: 14.6<br>Manganese: 0.0012<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>NDMA (N-Nitrosodimethylamine): 7<br>Nickel: 0.0006<br>Nitrate + nitrite as NO3: 0.76<br>pH: 8.7<br>Potassium: 6.98<br>Selenium: <0.0001<br>Silica - reactive: 2.77<br>Silver: <0.00002<br>Sodium: 96.7<br>Sulphate: 65.5<br>Total dissolved solids: 436<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0023<br>Hardness - English Degrees: 8.95<br>Hardness - French Degrees: 12.8<br>Hardness - German Degrees: 7.19<br>Hardness - International: 128</div>`)[0];
+                popup_7fac53e958f10e60ee8360a394795234.setContent(html_b025d9dc9a56b839646d710ac73b9fc5);
+            
+        
+
+        marker_ec7eb7ff11d8445ada27e18f53f039f2.bindPopup(popup_7fac53e958f10e60ee8360a394795234)
+        ;
+
+        
+    
+    
+            var marker_886ed99dd41067e891d20227c0f5c20f = L.marker(
+                [-37.5440745, 140.8175564],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_ae873402b09c7d1aa03dc483ed8ffa75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_886ed99dd41067e891d20227c0f5c20f.setIcon(icon_ae873402b09c7d1aa03dc483ed8ffa75);
+        
+    
+        var popup_8cd62cde627a9a1f614a94c40fe1808e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e76c299796abc309d424391cd0e05aca = $(`<div id="html_e76c299796abc309d424391cd0e05aca" style="width: 100.0%; height: 100.0%;">Alkalinity: 361<br>Aluminium - acid soluble: 0.002<br>Antimony: <0.0003<br>Arsenic: 0.00017<br>Barium: 0.0109<br>Beryllium: <0.0002<br>Bicarbonate: 440<br>Boron: 0.021<br>Cadmium: <0.0001<br>Calcium: 126<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 120<br>Chlorine (free residual): 0.9<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0087<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.1<br>Hardness: 365<br>Iodide: <0.01<br>Iron: <0.0005<br>Lanthanum: <0.0001<br>Lead: 0.0011<br>Magnesium: 12.2<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: <0.0001<br>Nickel: 0.0003<br>Nitrate + nitrite as NO3: 7.36<br>Pentachlorophenol: <0.05<br>pH: 7.5<br>Potassium: 2.07<br>Selenium: 0.0015<br>Silica - reactive: 15.7<br>Silver: <0.00002<br>Sodium: 80.3<br>Sulphate: 32.0<br>Total dissolved solids: 613<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 17<br>Turbidity: <0.10<br>Uranium: 0.0007<br>Zinc: 0.0111<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 25.55<br>Hardness - French Degrees: 36.5<br>Hardness - German Degrees: 20.44<br>Hardness - International: 365</div>`)[0];
+                popup_8cd62cde627a9a1f614a94c40fe1808e.setContent(html_e76c299796abc309d424391cd0e05aca);
+            
+        
+
+        marker_886ed99dd41067e891d20227c0f5c20f.bindPopup(popup_8cd62cde627a9a1f614a94c40fe1808e)
+        ;
+
+        
+    
+    
+            var marker_31762068de458c29106faa8e48039491 = L.marker(
+                [-36.9575267, 140.7413543],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_d0b5850c076cfac1b8b3b8eb45838168 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_31762068de458c29106faa8e48039491.setIcon(icon_d0b5850c076cfac1b8b3b8eb45838168);
+        
+    
+        var popup_392de025b9602809f88a1d3f64b60624 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43bcae0069d1b38b065e59afb962661e = $(`<div id="html_43bcae0069d1b38b065e59afb962661e" style="width: 100.0%; height: 100.0%;">Alkalinity: 309<br>Aluminium - acid soluble: 0.002<br>Antimony: <0.0003<br>Arsenic: 0.00010<br>Barium: 0.0367<br>Beryllium: <0.0002<br>Bicarbonate: 377<br>Boron: 0.506<br>Cadmium: <0.0001<br>Calcium: 59.5<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 472<br>Chlorine (free residual): 0.9<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.2993<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 1.2<br>Hardness: 344<br>Iodide: 0.22<br>Iron: 0.0917<br>Lanthanum: <0.0001<br>Lead: 0.0009<br>Magnesium: 47.4<br>Manganese: 0.0201<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 0.12<br>Pentachlorophenol: <0.05<br>pH: 7.7<br>Potassium: 18.1<br>Selenium: <0.0001<br>Silica - reactive: 11.8<br>Silver: <0.00002<br>Sodium: 324<br>Sulphate: 125.8<br>Total dissolved solids: 1,270<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 186<br>Turbidity: 0.57<br>Uranium: <0.0001<br>Zinc: 0.0202<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 24.08<br>Hardness - French Degrees: 34.4<br>Hardness - German Degrees: 19.26<br>Hardness - International: 344</div>`)[0];
+                popup_392de025b9602809f88a1d3f64b60624.setContent(html_43bcae0069d1b38b065e59afb962661e);
+            
+        
+
+        marker_31762068de458c29106faa8e48039491.bindPopup(popup_392de025b9602809f88a1d3f64b60624)
+        ;
+
+        
+    
+    
+            var marker_38c3c4c9253b61a88ad7be8b2880b4d3 = L.marker(
+                [-30.582765, 138.9807492],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_d36a56322817142271e798c198f6d8b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_38c3c4c9253b61a88ad7be8b2880b4d3.setIcon(icon_d36a56322817142271e798c198f6d8b9);
+        
+    
+        var popup_1cd3906e7303c440ccefa098c5f49535 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_160c427adfb2ae4a32d83486eae95a49 = $(`<div id="html_160c427adfb2ae4a32d83486eae95a49" style="width: 100.0%; height: 100.0%;">Alkalinity: 44<br>Aluminium - acid soluble: 0.018<br>Antimony: <0.0003<br>Arsenic: <0.00006<br>Barium: 0.0084<br>Beryllium: <0.0002<br>Bicarbonate: 54<br>Boron: 0.297<br>Cadmium: <0.0001<br>Calcium: 1.92<br>Carbonate: 0<br>Chloride: 23<br>Chromium: 0.0007<br>Colour: <1<br>Copper: 0.0464<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 6<br>Iodide: <0.01<br>Iron: 0.1181<br>Lanthanum: <0.0001<br>Lead: 0.0017<br>Magnesium: 0.35<br>Manganese: 0.0041<br>Mercury: <0.00003<br>Molybdenum: <0.0001<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 2.05<br>pH: 8.1<br>Potassium: 0.35<br>Selenium: <0.0001<br>Silica - reactive: 0.89<br>Silver: <0.00002<br>Sodium: 30.7<br>Sulphate: 2.9<br>Total dissolved solids: 120<br>Turbidity: 1.12<br>Uranium: <0.0001<br>Zinc: 0.5295<br>Hardness - English Degrees: 0.42<br>Hardness - French Degrees: 0.6<br>Hardness - German Degrees: 0.34<br>Hardness - International: 6</div>`)[0];
+                popup_1cd3906e7303c440ccefa098c5f49535.setContent(html_160c427adfb2ae4a32d83486eae95a49);
+            
+        
+
+        marker_38c3c4c9253b61a88ad7be8b2880b4d3.bindPopup(popup_1cd3906e7303c440ccefa098c5f49535)
+        ;
+
+        
+    
+    
+            var marker_a7b56c0765d70e3477da1e733a955dcd = L.marker(
+                [39.8054291, -75.15950091767773],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_02c5713d13596e0ab00e8591260f4272 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a7b56c0765d70e3477da1e733a955dcd.setIcon(icon_02c5713d13596e0ab00e8591260f4272);
+        
+    
+        var popup_a903c97541c2c36ff7e5d9a712dfa479 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9d53f961870b1e6a2d3ff9e6eae4db0 = $(`<div id="html_f9d53f961870b1e6a2d3ff9e6eae4db0" style="width: 100.0%; height: 100.0%;">Alkalinity: 15<br>Aluminium - acid soluble: 0.004<br>Antimony: 0.0013<br>Arsenic: 0.00009<br>Barium: 0.0041<br>Beryllium: <0.0002<br>Bicarbonate: 18<br>Boron: <0.020<br>Cadmium: <0.0001<br>Calcium: 4.51<br>Carbonate: 0<br>Chloride: 6<br>Chromium: 0.0002<br>Colour: <1<br>Copper: 0.5783<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 13<br>Iodide: 0.02<br>Iron: 0.0026<br>Lanthanum: <0.0001<br>Lead: 0.0021<br>Magnesium: 0.51<br>Manganese: 0.0041<br>Mercury: <0.00003<br>Molybdenum: <0.0001<br>Nickel: 0.0006<br>Nitrate + nitrite as NO3: 4.21<br>pH: 7.4<br>Potassium: 0.29<br>Selenium: <0.0001<br>Silica - reactive: 1.05<br>Silver: <0.00002<br>Sodium: 4.3<br>Sulphate: 1.4<br>Total dissolved solids: 106<br>Turbidity: 0.20<br>Uranium: <0.0001<br>Zinc: 1.7083<br>Hardness - English Degrees: 0.91<br>Hardness - French Degrees: 1.3<br>Hardness - German Degrees: 0.73<br>Hardness - International: 13</div>`)[0];
+                popup_a903c97541c2c36ff7e5d9a712dfa479.setContent(html_f9d53f961870b1e6a2d3ff9e6eae4db0);
+            
+        
+
+        marker_a7b56c0765d70e3477da1e733a955dcd.bindPopup(popup_a903c97541c2c36ff7e5d9a712dfa479)
+        ;
+
+        
+    
+    
+            var marker_579e3139fcc696e192e86547a270b7cb = L.marker(
+                [-27.5482756, 135.4484273],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_f6d081833b11c34f6b55b871dc026572 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_579e3139fcc696e192e86547a270b7cb.setIcon(icon_f6d081833b11c34f6b55b871dc026572);
+        
+    
+        var popup_e0688b4e6ea3a96373237bf07e050850 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_994ad5aff34cd4f6f1283cae05c30adb = $(`<div id="html_994ad5aff34cd4f6f1283cae05c30adb" style="width: 100.0%; height: 100.0%;">Alkalinity: 60<br>Aluminium - acid soluble: <0.001<br>Antimony: <0.0003<br>Arsenic: 0.00011<br>Barium: 0.0038<br>Beryllium: <0.0002<br>Bicarbonate: 73<br>Boron: 0.535<br>Cadmium: <0.0001<br>Calcium: 17.9<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 81<br>Chlorine (free residual): 1.2<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.3<br>Chloroacetic acid: <3<br>Chromium: 0.0002<br>Colour: <1<br>Copper: 0.0068<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 58<br>Iodide: 0.05<br>Iron: 0.0687<br>Lanthanum: <0.0001<br>Lead: 0.0003<br>Magnesium: 3.30<br>Manganese: 0.0040<br>Mercury: <0.00003<br>Molybdenum: <0.0001<br>Nickel: 0.0005<br>Nitrate + nitrite as NO3: 0.25<br>Pentachlorophenol: <0.05<br>pH: 8.2<br>Potassium: 2.59<br>Selenium: <0.0001<br>Silica - reactive: 2.55<br>Silver: <0.00002<br>Sodium: 65.5<br>Sulphate: 35.0<br>Total dissolved solids: 265<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 16<br>Turbidity: 0.18<br>Uranium: <0.0001<br>Zinc: 0.0201<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 4.06<br>Hardness - French Degrees: 5.8<br>Hardness - German Degrees: 3.26<br>Hardness - International: 58</div>`)[0];
+                popup_e0688b4e6ea3a96373237bf07e050850.setContent(html_994ad5aff34cd4f6f1283cae05c30adb);
+            
+        
+
+        marker_579e3139fcc696e192e86547a270b7cb.bindPopup(popup_e0688b4e6ea3a96373237bf07e050850)
+        ;
+
+        
+    
+    
+            var marker_51f1c278fbed45380484fa5d75667767 = L.marker(
+                [-36.5860356, 140.52187338228197],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_cf7898bfd56ac1911c5ff98ff5fea2cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_51f1c278fbed45380484fa5d75667767.setIcon(icon_cf7898bfd56ac1911c5ff98ff5fea2cb);
+        
+    
+        var popup_e1f4151a191d3231ca8b51940bdb7e3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b4998d54b354a3df692611c20f8c753 = $(`<div id="html_2b4998d54b354a3df692611c20f8c753" style="width: 100.0%; height: 100.0%;">Alkalinity: 379<br>Aluminium - acid soluble: 0.001<br>Antimony: <0.0003<br>Arsenic: 0.00116<br>Barium: 0.0579<br>Beryllium: <0.0002<br>Bicarbonate: 463<br>Boron: 0.110<br>Cadmium: <0.0001<br>Calcium: 164<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 662<br>Chlorine (free residual): 0.9<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0246<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 624<br>Iodide: 0.05<br>Iron: 0.0199<br>Lanthanum: <0.0001<br>Lead: 0.0008<br>Magnesium: 52.1<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: <0.0001<br>Nickel: 0.0003<br>Nitrate + nitrite as NO3: 0.53<br>Pentachlorophenol: <0.05<br>pH: 7.5<br>Potassium: 4.88<br>Selenium: 0.0007<br>Silica - reactive: 22.0<br>Silver: <0.00002<br>Sodium: 377<br>Sulphate: 83.0<br>Total dissolved solids: 1,675<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 12<br>Turbidity: 0.17<br>Uranium: 0.0007<br>Zinc: 0.0061<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 43.68<br>Hardness - French Degrees: 62.4<br>Hardness - German Degrees: 34.94<br>Hardness - International: 624</div>`)[0];
+                popup_e1f4151a191d3231ca8b51940bdb7e3b.setContent(html_2b4998d54b354a3df692611c20f8c753);
+            
+        
+
+        marker_51f1c278fbed45380484fa5d75667767.bindPopup(popup_e1f4151a191d3231ca8b51940bdb7e3b)
+        ;
+
+        
+    
+    
+            var marker_589a6b0cf2e42183fd91a84796656b4c = L.marker(
+                [61.5995703, -149.11109],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_765423306f2ba75ef57a9f34d3487b99 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_589a6b0cf2e42183fd91a84796656b4c.setIcon(icon_765423306f2ba75ef57a9f34d3487b99);
+        
+    
+        var popup_15dfffa8a700e91f90cace6f3f77a413 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95ef6d56bf88414dd061f2311a03c6d4 = $(`<div id="html_95ef6d56bf88414dd061f2311a03c6d4" style="width: 100.0%; height: 100.0%;">Alkalinity: 72<br>Aluminium - acid soluble: 0.014<br>Antimony: <0.0003<br>Arsenic: 0.00038<br>Barium: 0.0404<br>Beryllium: <0.0002<br>Bicarbonate: 88<br>Boron: 0.023<br>Cadmium: <0.0001<br>Calcium: 18.9<br>Carbonate: 0<br>Chloral hydrate: 10.2<br>Chloride: 82<br>Chlorine (free residual): 1.0<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.1<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0158<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 17<br>E. coli: 0<br>Fluoride: 0.1<br>Hardness: 83<br>Iodide: 0.04<br>Iron: 0.0038<br>Lanthanum: <0.0001<br>Lead: 0.0003<br>Magnesium: 8.70<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 0.53<br>Pentachlorophenol: <0.05<br>pH: 7.8<br>Potassium: 4.23<br>Selenium: <0.0001<br>Silica - reactive: 1.25<br>Silver: <0.00002<br>Sodium: 56.7<br>Sulphate: 15.9<br>Total dissolved solids: 257<br>Trichloroacetic acid: 7<br>Trihalomethanes (THMs): 141<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0016<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 5.81<br>Hardness - French Degrees: 8.3<br>Hardness - German Degrees: 4.65<br>Hardness - International: 83</div>`)[0];
+                popup_15dfffa8a700e91f90cace6f3f77a413.setContent(html_95ef6d56bf88414dd061f2311a03c6d4);
+            
+        
+
+        marker_589a6b0cf2e42183fd91a84796656b4c.bindPopup(popup_15dfffa8a700e91f90cace6f3f77a413)
+        ;
+
+        
+    
+    
+            var marker_8fa79f91f93237de72109a29240294e0 = L.marker(
+                [-31.14426995, 138.39017944032315],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_18545011b61524602a5feac8dfe62231 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8fa79f91f93237de72109a29240294e0.setIcon(icon_18545011b61524602a5feac8dfe62231);
+        
+    
+        var popup_7b7d4176f0da7e55f84770a0ff6a97eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41489d55e68d1757504f33c71eaf3c34 = $(`<div id="html_41489d55e68d1757504f33c71eaf3c34" style="width: 100.0%; height: 100.0%;">Alkalinity: 201<br>Aluminium - acid soluble: <0.001<br>Antimony: <0.0003<br>Arsenic: 0.00036<br>Barium: 0.0476<br>Beryllium: <0.0002<br>Bicarbonate: 245<br>Boron: 0.268<br>Cadmium: <0.0001<br>Calcium: 59.7<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 285<br>Chlorine (free residual): 0.9<br>Chlorine (total residual): 0.9<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: 0.0023<br>Colour: <1<br>Copper: 0.0325<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.6<br>Hardness: 308<br>Iodide: <0.01<br>Iron: 0.0024<br>Lanthanum: <0.0001<br>Lead: 0.0004<br>Magnesium: 38.7<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0011<br>Nickel: 0.0005<br>Nitrate + nitrite as NO3: 5.78<br>Pentachlorophenol: <0.05<br>pH: 7.9<br>Potassium: 2.87<br>Selenium: 0.0009<br>Silica - reactive: 19.4<br>Silver: <0.00002<br>Sodium: 171<br>Sulphate: 107.9<br>Total dissolved solids: 832<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 5<br>Turbidity: <0.10<br>Uranium: 0.0021<br>Zinc: 0.0161<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 21.56<br>Hardness - French Degrees: 30.8<br>Hardness - German Degrees: 17.25<br>Hardness - International: 308</div>`)[0];
+                popup_7b7d4176f0da7e55f84770a0ff6a97eb.setContent(html_41489d55e68d1757504f33c71eaf3c34);
+            
+        
+
+        marker_8fa79f91f93237de72109a29240294e0.bindPopup(popup_7b7d4176f0da7e55f84770a0ff6a97eb)
+        ;
+
+        
+    
+    
+            var marker_5971ffd394f903ee876fcc782e84879a = L.marker(
+                [-35.2973464, 140.6665903],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_5c75998710b68d908598106cc10b7134 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5971ffd394f903ee876fcc782e84879a.setIcon(icon_5c75998710b68d908598106cc10b7134);
+        
+    
+        var popup_8a831f8befdb755a367d5cb648c29147 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f810688229ae3fd31eba36e8642ebf68 = $(`<div id="html_f810688229ae3fd31eba36e8642ebf68" style="width: 100.0%; height: 100.0%;">Alkalinity: 175<br>Aluminium - acid soluble: <0.001<br>Antimony: <0.0003<br>Arsenic: 0.00337<br>Barium: 0.0176<br>Beryllium: <0.0002<br>Bicarbonate: 214<br>Boron: 0.138<br>Cadmium: <0.0001<br>Calcium: 45.3<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 213<br>Chlorine (free residual): 1.4<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.4<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0038<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.4<br>Hardness: 191<br>Iodide: <0.01<br>Iron: 0.0043<br>Lanthanum: <0.0001<br>Lead: 0.0002<br>Magnesium: 18.9<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: 0.0011<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 0.024<br>Pentachlorophenol: <0.05<br>pH: 7.8<br>Potassium: 5.46<br>Selenium: <0.0001<br>Silica - reactive: 21.0<br>Silver: <0.00002<br>Sodium: 156<br>Sulphate: 57.8<br>Total dissolved solids: 665<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 20<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0032<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 13.37<br>Hardness - French Degrees: 19.1<br>Hardness - German Degrees: 10.70<br>Hardness - International: 191</div>`)[0];
+                popup_8a831f8befdb755a367d5cb648c29147.setContent(html_f810688229ae3fd31eba36e8642ebf68);
+            
+        
+
+        marker_5971ffd394f903ee876fcc782e84879a.bindPopup(popup_8a831f8befdb755a367d5cb648c29147)
+        ;
+
+        
+    
+    
+            var marker_4903183d48fa06cba42023454e2c3700 = L.marker(
+                [-35.7176662, 137.9395439],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_c1188df9e85c5e935abcb8e37f14871a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4903183d48fa06cba42023454e2c3700.setIcon(icon_c1188df9e85c5e935abcb8e37f14871a);
+        
+    
+        var popup_e70149a3a5630057cf1cbe56856cc4ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b63cbd02c70dc1466bc37bbd306b99e = $(`<div id="html_3b63cbd02c70dc1466bc37bbd306b99e" style="width: 100.0%; height: 100.0%;">Alkalinity: 64<br>Aluminium - acid soluble: 0.002<br>Antimony: <0.0003<br>Arsenic: <0.00006<br>Barium: 0.0059<br>Beryllium: <0.0002<br>Bicarbonate: 77<br>Boron: 0.590<br>Cadmium: <0.0001<br>Calcium: 24.5<br>Carbonate: 1<br>Chloral hydrate: <1.0<br>Chloride: 93<br>Chlorine (free residual): 0.9<br>Chlorine (total residual): 1.0<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: 0.0003<br>Colour: <1<br>Copper: 0.0075<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 70<br>Iodide: <0.01<br>Iron: 0.0031<br>Lanthanum: <0.0001<br>Lead: <0.0001<br>Magnesium: 2.65<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: <0.0001<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 0.039<br>Pentachlorophenol: <0.05<br>pH: 8.4<br>Potassium: 2.64<br>Selenium: <0.0001<br>Silica - reactive: 0.14<br>Silver: <0.00002<br>Sodium: 53.9<br>Sulphate: 5.2<br>Total dissolved solids: 250<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): <4<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0033<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 4.90<br>Hardness - French Degrees: 7.0<br>Hardness - German Degrees: 3.92<br>Hardness - International: 70</div>`)[0];
+                popup_e70149a3a5630057cf1cbe56856cc4ab.setContent(html_3b63cbd02c70dc1466bc37bbd306b99e);
+            
+        
+
+        marker_4903183d48fa06cba42023454e2c3700.bindPopup(popup_e70149a3a5630057cf1cbe56856cc4ab)
+        ;
+
+        
+    
+    
+            var marker_e6bb2af89fa9f72a8219d2f85b47bd63 = L.marker(
+                [-37.3761655, 140.8404168],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_f4d6c9ffcd3d2d3cd9b7bc412bd12f3a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e6bb2af89fa9f72a8219d2f85b47bd63.setIcon(icon_f4d6c9ffcd3d2d3cd9b7bc412bd12f3a);
+        
+    
+        var popup_3b2d1db6faac919dd65dcda71bf49be5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6d41203e4117a093b4319b24b6bb07e = $(`<div id="html_a6d41203e4117a093b4319b24b6bb07e" style="width: 100.0%; height: 100.0%;">Alkalinity: 320<br>Aluminium - acid soluble: <0.001<br>Antimony: <0.0003<br>Arsenic: <0.00006<br>Barium: 0.0197<br>Beryllium: <0.0002<br>Bicarbonate: 390<br>Boron: 0.100<br>Cadmium: <0.0001<br>Calcium: 95.1<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 180<br>Chlorine (free residual): 0.9<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0090<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.2<br>Hardness: 318<br>Iodide: <0.01<br>Iron: 0.0768<br>Lanthanum: <0.0001<br>Lead: 0.0005<br>Magnesium: 19.6<br>Manganese: 0.0012<br>Mercury: <0.00003<br>Molybdenum: 0.0001<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: <0.014<br>Pentachlorophenol: <0.05<br>pH: 7.4<br>Potassium: 3.19<br>Selenium: <0.0001<br>Silica - reactive: 11.8<br>Silver: <0.00002<br>Sodium: 111<br>Sulphate: 5.5<br>Total dissolved solids: 655<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 75<br>Turbidity: 0.19<br>Uranium: <0.0001<br>Zinc: 0.0044<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 22.26<br>Hardness - French Degrees: 31.8<br>Hardness - German Degrees: 17.81<br>Hardness - International: 318</div>`)[0];
+                popup_3b2d1db6faac919dd65dcda71bf49be5.setContent(html_a6d41203e4117a093b4319b24b6bb07e);
+            
+        
+
+        marker_e6bb2af89fa9f72a8219d2f85b47bd63.bindPopup(popup_3b2d1db6faac919dd65dcda71bf49be5)
+        ;
+
+        
+    
+    
+            var marker_58243510260a2c1a6c9c5d8e5e26585f = L.marker(
+                [-35.258606, 140.9066074],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_a1ef8d11a443fe782e077733b0654dd3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_58243510260a2c1a6c9c5d8e5e26585f.setIcon(icon_a1ef8d11a443fe782e077733b0654dd3);
+        
+    
+        var popup_a7323192735de131fff0475260e4ff14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fbbeb59e1eaa6c76bd58051e60f47ac = $(`<div id="html_6fbbeb59e1eaa6c76bd58051e60f47ac" style="width: 100.0%; height: 100.0%;">Alkalinity: 241<br>Aluminium - acid soluble: 0.001<br>Antimony: <0.0003<br>Arsenic: 0.00372<br>Barium: 0.0073<br>Beryllium: <0.0002<br>Bicarbonate: 294<br>Boron: 0.148<br>Cadmium: <0.0001<br>Calcium: 53.4<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 191<br>Chlorine (free residual): 1.4<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.4<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0160<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.7<br>Hardness: 247<br>Iodide: 0.18<br>Iron: 0.0047<br>Lanthanum: <0.0001<br>Lead: 0.0004<br>Magnesium: 27.5<br>Manganese: 0.0002<br>Mercury: <0.00003<br>Molybdenum: 0.0017<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 0.019<br>Pentachlorophenol: <0.05<br>pH: 7.7<br>Potassium: 6.83<br>Selenium: <0.0001<br>Silica - reactive: 28.4<br>Silver: <0.00002<br>Sodium: 152<br>Sulphate: 92.6<br>Total dissolved solids: 722<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 17<br>Turbidity: 0.13<br>Uranium: <0.0001<br>Zinc: 0.0068<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 17.29<br>Hardness - French Degrees: 24.7<br>Hardness - German Degrees: 13.83<br>Hardness - International: 247</div>`)[0];
+                popup_a7323192735de131fff0475260e4ff14.setContent(html_6fbbeb59e1eaa6c76bd58051e60f47ac);
+            
+        
+
+        marker_58243510260a2c1a6c9c5d8e5e26585f.bindPopup(popup_a7323192735de131fff0475260e4ff14)
+        ;
+
+        
+    
+    
+            var marker_6a118dc83fb5d2482a4bc80b50dd3a5e = L.marker(
+                [-26.1635499, 129.1714386],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_ba835d2c4685cd8319682580f165e38e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6a118dc83fb5d2482a4bc80b50dd3a5e.setIcon(icon_ba835d2c4685cd8319682580f165e38e);
+        
+    
+        var popup_408792efff65eb624b4440e41572e74e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e87e6874170a032c0893a261979264c1 = $(`<div id="html_e87e6874170a032c0893a261979264c1" style="width: 100.0%; height: 100.0%;">Alkalinity: 361<br>Aluminium - acid soluble: 0.002<br>Antimony: <0.0003<br>Arsenic: 0.00020<br>Barium: 0.0502<br>Beryllium: <0.0002<br>Bicarbonate: 440<br>Boron: 0.202<br>Cadmium: <0.0001<br>Calcium: 38.1<br>Carbonate: 0<br>Chloride: 143<br>Chromium: 0.0050<br>Colour: <1<br>Copper: 0.0046<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: 0.6<br>Hardness: 414<br>Iodide: 0.13<br>Iron: 0.0008<br>Lanthanum: <0.0001<br>Lead: 0.0002<br>Magnesium: 77.5<br>Manganese: 0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0012<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 27.59<br>pH: 7.8<br>Potassium: 3.34<br>Selenium: 0.0039<br>Silica - reactive: 70.2<br>Silver: <0.00002<br>Sodium: 108<br>Sulphate: 66.2<br>Total dissolved solids: 721<br>Turbidity: <0.10<br>Uranium: 0.0010<br>Zinc: 0.0020<br>Hardness - English Degrees: 28.98<br>Hardness - French Degrees: 41.4<br>Hardness - German Degrees: 23.18<br>Hardness - International: 414</div>`)[0];
+                popup_408792efff65eb624b4440e41572e74e.setContent(html_e87e6874170a032c0893a261979264c1);
+            
+        
+
+        marker_6a118dc83fb5d2482a4bc80b50dd3a5e.bindPopup(popup_408792efff65eb624b4440e41572e74e)
+        ;
+
+        
+    
+    
+            var marker_ee0b999c98452c08e784178fef0c358a = L.marker(
+                [-38.0518869, 140.7004059],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_fa7ba972561b8edd1a66a0880abcd70b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ee0b999c98452c08e784178fef0c358a.setIcon(icon_fa7ba972561b8edd1a66a0880abcd70b);
+        
+    
+        var popup_2d9e38036a8650ea36f863c88fc801be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d967b0bd34cf8967117215964260599c = $(`<div id="html_d967b0bd34cf8967117215964260599c" style="width: 100.0%; height: 100.0%;">Alkalinity: 349<br>Aluminium - acid soluble: 0.007<br>Antimony: <0.0003<br>Arsenic: <0.00006<br>Barium: 0.0712<br>Beryllium: <0.0002<br>Bicarbonate: 426<br>Boron: 0.893<br>Cadmium: <0.0001<br>Calcium: 2.19<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 168<br>Chlorine (free residual): 1.1<br>Chlorine (total residual): 1.1<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0371<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 2<br>E. coli: 0<br>Fluoride: 0.8<br>Hardness: 23<br>Iodide: 0.02<br>Iron: 0.0042<br>Lanthanum: <0.0001<br>Lead: 0.0003<br>Magnesium: 4.22<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: <0.0001<br>Nickel: 0.0002<br>Nitrate + nitrite as NO3: 0.12<br>Pentachlorophenol: <0.05<br>pH: 8.1<br>Potassium: 14.1<br>Selenium: 0.0002<br>Silica - reactive: 12.7<br>Silver: <0.00002<br>Sodium: 263<br>Sulphate: 23.7<br>Total dissolved solids: 698<br>Trichloroacetic acid: 2<br>Trihalomethanes (THMs): 69<br>Turbidity: 0.15<br>Uranium: <0.0001<br>Zinc: 0.0115<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 1.61<br>Hardness - French Degrees: 2.3<br>Hardness - German Degrees: 1.29<br>Hardness - International: 23</div>`)[0];
+                popup_2d9e38036a8650ea36f863c88fc801be.setContent(html_d967b0bd34cf8967117215964260599c);
+            
+        
+
+        marker_ee0b999c98452c08e784178fef0c358a.bindPopup(popup_2d9e38036a8650ea36f863c88fc801be)
+        ;
+
+        
+    
+    
+            var marker_d7fd2e5a1c6892e195767a680bb24e0b = L.marker(
+                [-34.415095, 137.502933],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_e831db04413157db2bf89b49f5bcfbb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d7fd2e5a1c6892e195767a680bb24e0b.setIcon(icon_e831db04413157db2bf89b49f5bcfbb6);
+        
+    
+        var popup_240a472e439d8836411f926c81e18e15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72c1e28f5c777fa1dd3cb66da26334d8 = $(`<div id="html_72c1e28f5c777fa1dd3cb66da26334d8" style="width: 100.0%; height: 100.0%;">Alkalinity: 56<br>Bicarbonate: 48<br>Calcium: 16.4<br>Carbonate: 10<br>Chlorine (free residual): <0.1<br>Chloramine (mono residual): 3.0<br>Chlorine (total residual): 3.0<br>E. coli: 0<br>Nitrate + nitrite as NO3: 1.16<br>pH: 9.0<br>Total dissolved solids: 288<br>Turbidity: <0.10<br>Hardness - English Degrees: nan<br>Hardness - French Degrees: nan<br>Hardness - German Degrees: nan<br>Hardness - International: nan</div>`)[0];
+                popup_240a472e439d8836411f926c81e18e15.setContent(html_72c1e28f5c777fa1dd3cb66da26334d8);
+            
+        
+
+        marker_d7fd2e5a1c6892e195767a680bb24e0b.bindPopup(popup_240a472e439d8836411f926c81e18e15)
+        ;
+
+        
+    
+    
+            var marker_ba80ab8b6a4f42b486b581d460cdebd7 = L.marker(
+                [-26.2766919, 132.1338209],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_9e7727e0efdccc8ba481bbfe4c0c9653 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ba80ab8b6a4f42b486b581d460cdebd7.setIcon(icon_9e7727e0efdccc8ba481bbfe4c0c9653);
+        
+    
+        var popup_d328ce40d48d27b3cac8f7cf3a37e7e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_184990c9394281602aa672887abe88c2 = $(`<div id="html_184990c9394281602aa672887abe88c2" style="width: 100.0%; height: 100.0%;">Alkalinity: 325<br>Aluminium - acid soluble: 0.006<br>Antimony: <0.0003<br>Arsenic: 0.00023<br>Barium: 0.0085<br>Beryllium: <0.0002<br>Bicarbonate: 396<br>Boron: 0.121<br>Cadmium: <0.0001<br>Calcium: 46.5<br>Carbonate: 0<br>Chloride: 67<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0104<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: 1.1<br>Hardness: 261<br>Iodide: 0.08<br>Iron: 0.0031<br>Lanthanum: <0.0001<br>Lead: 0.0058<br>Magnesium: 35.2<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0013<br>Nickel: 0.0004<br>Nitrate + nitrite as NO3: 6.37<br>pH: 7.7<br>Potassium: 1.63<br>Selenium: 0.0011<br>Silica - reactive: 67.5<br>Silver: <0.00002<br>Sodium: 99.4<br>Sulphate: 49.7<br>Total dissolved solids: 500<br>Turbidity: <0.10<br>Uranium: 0.0007<br>Zinc: 0.4802<br>Hardness - English Degrees: 18.27<br>Hardness - French Degrees: 26.1<br>Hardness - German Degrees: 14.62<br>Hardness - International: 261</div>`)[0];
+                popup_d328ce40d48d27b3cac8f7cf3a37e7e4.setContent(html_184990c9394281602aa672887abe88c2);
+            
+        
+
+        marker_ba80ab8b6a4f42b486b581d460cdebd7.bindPopup(popup_d328ce40d48d27b3cac8f7cf3a37e7e4)
+        ;
+
+        
+    
+    
+            var marker_f1ae8f372803f8b85c59920ab02bb89b = L.marker(
+                [52.7427169, -1.1717315],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_143c15f060da57a67fe0d939dee04c84 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f1ae8f372803f8b85c59920ab02bb89b.setIcon(icon_143c15f060da57a67fe0d939dee04c84);
+        
+    
+        var popup_096b7d9596ee435e06b75268876f4176 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_019f5c9f97b728b7853182db01547533 = $(`<div id="html_019f5c9f97b728b7853182db01547533" style="width: 100.0%; height: 100.0%;">Alkalinity: 418<br>Aluminium - acid soluble: <0.001<br>Antimony: <0.0003<br>Arsenic: 0.00104<br>Barium: 0.0785<br>Beryllium: <0.0002<br>Bicarbonate: 511<br>Boron: 0.206<br>Cadmium: <0.0001<br>Calcium: 79.0<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 387<br>Chlorine (free residual): 1.1<br>Chlorine (total residual): 1.2<br>Chloroacetic acid: <3<br>Chromium: 0.0009<br>Colour: <1<br>Copper: 0.0225<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.6<br>Hardness: 484<br>Iodide: <0.01<br>Iron: 0.0008<br>Lanthanum: <0.0001<br>Lead: 0.0005<br>Magnesium: 69.8<br>Manganese: 0.0002<br>Mercury: <0.00003<br>Molybdenum: 0.0012<br>Nickel: 0.0007<br>Nitrate + nitrite as NO3: 0.53<br>Pentachlorophenol: <0.05<br>pH: 7.3<br>Potassium: 6.77<br>Selenium: 0.0009<br>Silica - reactive: 16.8<br>Silver: <0.00002<br>Sodium: 224<br>Sulphate: 87.1<br>Total dissolved solids: 1,173<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 6<br>Turbidity: <0.10<br>Uranium: 0.0051<br>Zinc: 0.0113<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 33.88<br>Hardness - French Degrees: 48.4<br>Hardness - German Degrees: 27.10<br>Hardness - International: 484</div>`)[0];
+                popup_096b7d9596ee435e06b75268876f4176.setContent(html_019f5c9f97b728b7853182db01547533);
+            
+        
+
+        marker_f1ae8f372803f8b85c59920ab02bb89b.bindPopup(popup_096b7d9596ee435e06b75268876f4176)
+        ;
+
+        
+    
+    
+            var marker_0495a972a9d06fc86de5bcc157dd1dfc = L.marker(
+                [-35.5077184, 139.132835],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_bf8322d63545bd9422e954c92ab95b29 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0495a972a9d06fc86de5bcc157dd1dfc.setIcon(icon_bf8322d63545bd9422e954c92ab95b29);
+        
+    
+        var popup_5b90ac92e907e9ac3eabee318527b0a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8baad058405bd38851af045bcb0c8ea = $(`<div id="html_a8baad058405bd38851af045bcb0c8ea" style="width: 100.0%; height: 100.0%;">Alkalinity: 62<br>Bicarbonate: 61<br>Calcium: 18.3<br>Carbonate: 7<br>Chlorine (free residual): <0.1<br>Chloramine (mono residual): 2.9<br>Chlorine (total residual): 2.9<br>E. coli: 0<br>Nitrate + nitrite as NO3: 1.54<br>pH: 8.8<br>Total dissolved solids: 370<br>Turbidity: 0.11<br>Hardness - English Degrees: nan<br>Hardness - French Degrees: nan<br>Hardness - German Degrees: nan<br>Hardness - International: nan</div>`)[0];
+                popup_5b90ac92e907e9ac3eabee318527b0a5.setContent(html_a8baad058405bd38851af045bcb0c8ea);
+            
+        
+
+        marker_0495a972a9d06fc86de5bcc157dd1dfc.bindPopup(popup_5b90ac92e907e9ac3eabee318527b0a5)
+        ;
+
+        
+    
+    
+            var marker_3f757a1ca7880ebf510521d5e112f969 = L.marker(
+                [-34.1743516, 140.7468863],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_d5f967d6ff76c88024219144dd075fcc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3f757a1ca7880ebf510521d5e112f969.setIcon(icon_d5f967d6ff76c88024219144dd075fcc);
+        
+    
+        var popup_bdc1aeff9c8de7e1889f8c5034e8a7f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16b51daa977dacce414b45e88c974bcc = $(`<div id="html_16b51daa977dacce414b45e88c974bcc" style="width: 100.0%; height: 100.0%;">Alkalinity: 49<br>Aluminium - acid soluble: 0.020<br>Antimony: <0.0003<br>Arsenic: 0.00040<br>Barium: 0.0374<br>Beryllium: <0.0002<br>Bicarbonate: 59<br>Boron: 0.023<br>Cadmium: <0.0001<br>Calcium: 14.16<br>Carbonate: 0<br>Chloral hydrate: 14.6<br>Chloride: 66<br>Chlorine (free residual): 0.8<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 0.9<br>Chlorite: <0.01<br>Chloroacetic acid: 4<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0115<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 22<br>E. coli: 0<br>Fluoride: 0.9<br>Hardness: 71<br>Iodide: 0.01<br>Iron: 0.0109<br>Lanthanum: <0.0001<br>Lead: 0.0001<br>Magnesium: 8.73<br>Manganese: 0.0044<br>Mercury: <0.00003<br>Molybdenum: 0.0003<br>Nickel: 0.0006<br>Nitrate + nitrite as NO3: 0.35<br>Pentachlorophenol: <0.05<br>pH: 7.7<br>Potassium: 3.74<br>Selenium: <0.0001<br>Silica - reactive: 1.83<br>Silver: <0.00002<br>Sodium: 47.1<br>Sulphate: 38.2<br>Total dissolved solids: 234<br>Trichloroacetic acid: 17<br>Trihalomethanes (THMs): 130<br>Turbidity: 0.15<br>Uranium: <0.0001<br>Zinc: 0.0030<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 4.97<br>Hardness - French Degrees: 7.1<br>Hardness - German Degrees: 3.98<br>Hardness - International: 71</div>`)[0];
+                popup_bdc1aeff9c8de7e1889f8c5034e8a7f9.setContent(html_16b51daa977dacce414b45e88c974bcc);
+            
+        
+
+        marker_3f757a1ca7880ebf510521d5e112f969.bindPopup(popup_bdc1aeff9c8de7e1889f8c5034e8a7f9)
+        ;
+
+        
+    
+    
+            var marker_a00a71229cb837e223ac72d356a85cc3 = L.marker(
+                [7.1242676, 40.0080973],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_6f545ed16ae05c3cfc7312671101860b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a00a71229cb837e223ac72d356a85cc3.setIcon(icon_6f545ed16ae05c3cfc7312671101860b);
+        
+    
+        var popup_28079986eb462bb6f77a596ff1273ccf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccac497d9fb9b36c4368c025fcfeae24 = $(`<div id="html_ccac497d9fb9b36c4368c025fcfeae24" style="width: 100.0%; height: 100.0%;">Alkalinity: 315<br>Aluminium - acid soluble: 0.002<br>Antimony: <0.0003<br>Arsenic: <0.00006<br>Barium: 0.0347<br>Beryllium: <0.0002<br>Bicarbonate: 383<br>Boron: 0.450<br>Cadmium: <0.0001<br>Calcium: 25.1<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 196<br>Chlorine (free residual): 0.9<br>Chlorine (total residual): 1.2<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0250<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.3<br>Hardness: 135<br>Iodide: <0.01<br>Iron: 0.0021<br>Lanthanum: <0.0001<br>Lead: 0.0005<br>Magnesium: 17.5<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0002<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 0.10<br>Pentachlorophenol: <0.05<br>pH: 7.7<br>Potassium: 20.8<br>Selenium: <0.0001<br>Silica - reactive: 16.7<br>Silver: <0.00002<br>Sodium: 216<br>Sulphate: 25.0<br>Total dissolved solids: 711<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 43<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0074<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 9.45<br>Hardness - French Degrees: 13.5<br>Hardness - German Degrees: 7.56<br>Hardness - International: 135</div>`)[0];
+                popup_28079986eb462bb6f77a596ff1273ccf.setContent(html_ccac497d9fb9b36c4368c025fcfeae24);
+            
+        
+
+        marker_a00a71229cb837e223ac72d356a85cc3.bindPopup(popup_28079986eb462bb6f77a596ff1273ccf)
+        ;
+
+        
+    
+    
+            var marker_d761b9be580cda84be7e21c46c5806b7 = L.marker(
+                [41.1457902, -81.5333603],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_daf75076cde768870fd013d09bca5b01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d761b9be580cda84be7e21c46c5806b7.setIcon(icon_daf75076cde768870fd013d09bca5b01);
+        
+    
+        var popup_6489dbf26acd44d25fe3b18e9bfcb81f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b53994e7e33e95b972a60b9daaabea5 = $(`<div id="html_6b53994e7e33e95b972a60b9daaabea5" style="width: 100.0%; height: 100.0%;">Alkalinity: 65<br>Aluminium - acid soluble: 0.033<br>Ammonia - free - as NH3: 0.24<br>Antimony: <0.0003<br>Arsenic: 0.00036<br>Barium: 0.0428<br>Beryllium: <0.0002<br>Bicarbonate: 72<br>Boron: 0.025<br>Cadmium: <0.0001<br>Calcium: 17.6<br>Carbonate: 4<br>Chloride: 89<br>Chlorine (free residual): <0.1<br>Chloramine (mono residual): 3.5<br>Chlorine (total residual): 3.5<br>Chromium: 0.0001<br>Colour: 1<br>Copper: 0.0130<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: 0.9<br>Hardness: 89<br>Iodide: 0.02<br>Iron: 0.0129<br>Lanthanum: <0.0001<br>Lead: 0.0001<br>Magnesium: 11.02<br>Manganese: 0.0046<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>NDMA (N-Nitrosodimethylamine): 10<br>Nickel: 0.0006<br>Nitrate + nitrite as NO3: 1.30<br>pH: 8.8<br>Potassium: 4.22<br>Selenium: <0.0001<br>Silica - reactive: 1.44<br>Silver: <0.00002<br>Sodium: 64.1<br>Sulphate: 48.2<br>Total dissolved solids: 299<br>Turbidity: 0.12<br>Uranium: <0.0001<br>Zinc: 0.0027<br>Hardness - English Degrees: 6.23<br>Hardness - French Degrees: 8.9<br>Hardness - German Degrees: 4.98<br>Hardness - International: 89</div>`)[0];
+                popup_6489dbf26acd44d25fe3b18e9bfcb81f.setContent(html_6b53994e7e33e95b972a60b9daaabea5);
+            
+        
+
+        marker_d761b9be580cda84be7e21c46c5806b7.bindPopup(popup_6489dbf26acd44d25fe3b18e9bfcb81f)
+        ;
+
+        
+    
+    
+            var marker_abb0d11ab3d81c141a50a86063c5e989 = L.marker(
+                [-34.567348, 139.5973284],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_edb6dce36c0559259edc6e5e00028406 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_abb0d11ab3d81c141a50a86063c5e989.setIcon(icon_edb6dce36c0559259edc6e5e00028406);
+        
+    
+        var popup_f6633a1609e634f84a51a12e8611b5b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6755a571f6c955a52bf157ca471547ea = $(`<div id="html_6755a571f6c955a52bf157ca471547ea" style="width: 100.0%; height: 100.0%;">Alkalinity: 62<br>Aluminium - acid soluble: 0.028<br>Ammonia - free - as NH3: 0.22<br>Antimony: <0.0003<br>Arsenic: 0.00037<br>Barium: 0.0423<br>Beryllium: <0.0002<br>Bicarbonate: 64<br>Boron: 0.028<br>Cadmium: <0.0001<br>Calcium: 17.3<br>Carbonate: 6<br>Chloride: 80<br>Chlorine (free residual): <0.1<br>Chloramine (mono residual): 3.6<br>Chlorine (total residual): 3.6<br>Chlorite: <0.01<br>Chromium: <0.0001<br>Colour: 1<br>Copper: 0.0051<br>Cyanide as CN: <0.05<br>E. coli: 99.7%<br>Fluoride: 0.9<br>Hardness: 84<br>Iodide: 0.02<br>Iron: 0.0024<br>Lanthanum: <0.0001<br>Lead: 0.0002<br>Magnesium: 9.81<br>Manganese: 0.0036<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>NDMA (N-Nitrosodimethylamine): 7<br>Nickel: 0.0005<br>Nitrate + nitrite as NO3: 0.52<br>pH: 8.8<br>Potassium: 4.17<br>Selenium: <0.0001<br>Silica - reactive: 1.64<br>Silver: <0.00002<br>Sodium: 58.1<br>Sulphate: 45.3<br>Total dissolved solids: 278<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0032<br>Hardness - English Degrees: 5.88<br>Hardness - French Degrees: 8.4<br>Hardness - German Degrees: 4.70<br>Hardness - International: 84</div>`)[0];
+                popup_f6633a1609e634f84a51a12e8611b5b2.setContent(html_6755a571f6c955a52bf157ca471547ea);
+            
+        
+
+        marker_abb0d11ab3d81c141a50a86063c5e989.bindPopup(popup_f6633a1609e634f84a51a12e8611b5b2)
+        ;
+
+        
+    
+    
+            var marker_43eb69d5e0b9115cfb2ce8ee5edf0847 = L.marker(
+                [-35.2529335, 139.4533779],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_46c872a55d63ee12b01cdc3aaa81738f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_43eb69d5e0b9115cfb2ce8ee5edf0847.setIcon(icon_46c872a55d63ee12b01cdc3aaa81738f);
+        
+    
+        var popup_5ba6cda3d5422990ef4dc97852c64cf7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_311f02c5629ea215e9e7ff8935f8ac52 = $(`<div id="html_311f02c5629ea215e9e7ff8935f8ac52" style="width: 100.0%; height: 100.0%;">Alkalinity: 68<br>Aluminium - acid soluble: 0.023<br>Ammonia - free - as NH3: 0.31<br>Antimony: <0.0003<br>Arsenic: 0.00041<br>Barium: 0.0408<br>Beryllium: <0.0002<br>Bicarbonate: 72<br>Boron: 0.026<br>Cadmium: <0.0001<br>Calcium: 19.1<br>Carbonate: 6<br>Chloride: 88<br>Chlorine (free residual): <0.1<br>Chloramine (mono residual): 2.9<br>Chlorine (total residual): 2.9<br>Chromium: 0.0001<br>Colour: 1<br>Copper: 0.0073<br>Cyanide as CN: <0.05<br>E. coli: 99.6%<br>Fluoride: 0.9<br>Hardness: 90<br>Iodide: 0.02<br>Iron: 0.0022<br>Lanthanum: <0.0001<br>Lead: 0.0002<br>Magnesium: 10.32<br>Manganese: 0.0019<br>Mercury: <0.00003<br>Molybdenum: 0.0004<br>NDMA (N-Nitrosodimethylamine): 23<br>Nickel: 0.0005<br>Nitrate + nitrite as NO3: 1.92<br>pH: 8.8<br>Potassium: 4.57<br>Selenium: <0.0001<br>Silica - reactive: 1.36<br>Silver: <0.00002<br>Sodium: 62.7<br>Sulphate: 45.6<br>Total dissolved solids: 297<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0015<br>Hardness - English Degrees: 6.30<br>Hardness - French Degrees: 9.0<br>Hardness - German Degrees: 5.04<br>Hardness - International: 90</div>`)[0];
+                popup_5ba6cda3d5422990ef4dc97852c64cf7.setContent(html_311f02c5629ea215e9e7ff8935f8ac52);
+            
+        
+
+        marker_43eb69d5e0b9115cfb2ce8ee5edf0847.bindPopup(popup_5ba6cda3d5422990ef4dc97852c64cf7)
+        ;
+
+        
+    
+    
+            var marker_7afab1b81f86dab1a54f4f7b21705c23 = L.marker(
+                [-37.650131200000004, 140.78517001023167],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_2f4d84a8922d998016a14d0b686b9a80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7afab1b81f86dab1a54f4f7b21705c23.setIcon(icon_2f4d84a8922d998016a14d0b686b9a80);
+        
+    
+        var popup_aa2de61aa955c4c4e8d9ad6fb230ce09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4662520321d9535005ae8ffb88a7a589 = $(`<div id="html_4662520321d9535005ae8ffb88a7a589" style="width: 100.0%; height: 100.0%;">Alkalinity: 366<br>Aluminium - acid soluble: <0.001<br>Antimony: <0.0003<br>Arsenic: 0.00016<br>Barium: 0.0366<br>Beryllium: <0.0002<br>Bicarbonate: 446<br>Boron: 0.056<br>Cadmium: <0.0001<br>Calcium: 133<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 189<br>Chlorine (free residual): 0.9<br>Chlorine (total residual): 0.8<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0039<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.2<br>Hardness: 401<br>Iodide: <0.01<br>Iron: 0.0272<br>Lanthanum: <0.0001<br>Lead: 0.0004<br>Magnesium: 16.7<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: 0.0003<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 0.02<br>Pentachlorophenol: <0.05<br>pH: 7.6<br>Potassium: 2.67<br>Selenium: <0.0001<br>Silica - reactive: 12.8<br>Silver: <0.00002<br>Sodium: 106.4<br>Sulphate: 14.5<br>Total dissolved solids: 731<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 36<br>Turbidity: <0.10<br>Uranium: <0.0001<br>Zinc: 0.0071<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 28.07<br>Hardness - French Degrees: 40.1<br>Hardness - German Degrees: 22.46<br>Hardness - International: 401</div>`)[0];
+                popup_aa2de61aa955c4c4e8d9ad6fb230ce09.setContent(html_4662520321d9535005ae8ffb88a7a589);
+            
+        
+
+        marker_7afab1b81f86dab1a54f4f7b21705c23.bindPopup(popup_aa2de61aa955c4c4e8d9ad6fb230ce09)
+        ;
+
+        
+    
+    
+            var marker_e7aff9e3d82b2a991dcb40e182674a04 = L.marker(
+                [-26.4660067, 132.0398271],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_44acd8e873359d1e327523c9197cd1c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e7aff9e3d82b2a991dcb40e182674a04.setIcon(icon_44acd8e873359d1e327523c9197cd1c6);
+        
+    
+        var popup_b37b52bdae52ec0a4cb3c0af26c5c8e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66e70ffe3f74effeed2077d72acd2237 = $(`<div id="html_66e70ffe3f74effeed2077d72acd2237" style="width: 100.0%; height: 100.0%;">Alkalinity: 266<br>Aluminium - acid soluble: 0.002<br>Antimony: <0.0003<br>Arsenic: 0.00012<br>Barium: 0.0124<br>Beryllium: <0.0002<br>Bicarbonate: 324<br>Boron: 0.128<br>Cadmium: <0.0001<br>Calcium: 46.2<br>Carbonate: 0<br>Chloride: 41<br>Chromium: 0.0002<br>Colour: <1<br>Copper: 0.0042<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: 0.9<br>Hardness: 262<br>Iodide: 0.06<br>Iron: 0.0083<br>Lanthanum: <0.0001<br>Lead: 0.0012<br>Magnesium: 35.6<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: 0.0005<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 14.06<br>pH: 7.9<br>Potassium: 4.08<br>Selenium: 0.0016<br>Silica - reactive: 59.3<br>Silver: <0.00002<br>Sodium: 51.9<br>Sulphate: 25.0<br>Total dissolved solids: 386<br>Turbidity: 0.13<br>Uranium: 0.0003<br>Zinc: 0.0131<br>Hardness - English Degrees: 18.34<br>Hardness - French Degrees: 26.2<br>Hardness - German Degrees: 14.67<br>Hardness - International: 262</div>`)[0];
+                popup_b37b52bdae52ec0a4cb3c0af26c5c8e2.setContent(html_66e70ffe3f74effeed2077d72acd2237);
+            
+        
+
+        marker_e7aff9e3d82b2a991dcb40e182674a04.bindPopup(popup_b37b52bdae52ec0a4cb3c0af26c5c8e2)
+        ;
+
+        
+    
+    
+            var marker_2f60c7ca422d946576d945b7bf8cd964 = L.marker(
+                [-34.1803736, 139.9863923],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_8b295bfdeb03e56c1582f5a1156f8215 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2f60c7ca422d946576d945b7bf8cd964.setIcon(icon_8b295bfdeb03e56c1582f5a1156f8215);
+        
+    
+        var popup_3700163b25152b8b3b4c85c5d629f768 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77e70dd9a48081a89fb1f02453fdf700 = $(`<div id="html_77e70dd9a48081a89fb1f02453fdf700" style="width: 100.0%; height: 100.0%;">Alkalinity: 44<br>Aluminium - acid soluble: 0.017<br>Antimony: <0.0003<br>Arsenic: 0.00033<br>Barium: 0.0400<br>Beryllium: <0.0002<br>Bicarbonate: 53<br>Boron: 0.024<br>Cadmium: <0.0001<br>Calcium: 13.2<br>Carbonate: 0<br>Chloral hydrate: 12.0<br>Chloride: 73<br>Chlorine (free residual): 1.2<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.3<br>Chloroacetic acid: 4<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0290<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: 20<br>E. coli: 0<br>Fluoride: 0.9<br>Hardness: 72<br>Iodide: 0.02<br>Iron: 0.0247<br>Lanthanum: <0.0001<br>Lead: 0.0003<br>Magnesium: 9.38<br>Manganese: 0.0043<br>Mercury: <0.00003<br>Molybdenum: 0.0003<br>Nickel: 0.0006<br>Nitrate + nitrite as NO3: 0.86<br>Pentachlorophenol: <0.05<br>pH: 7.4<br>Potassium: 3.81<br>Selenium: <0.0001<br>Silica - reactive: 1.40<br>Silver: <0.00002<br>Sodium: 52.8<br>Sulphate: 44.0<br>Total dissolved solids: 250<br>Trichloroacetic acid: 16<br>Trihalomethanes (THMs): 108<br>Turbidity: 0.17<br>Uranium: <0.0001<br>Zinc: 0.0047<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 5.04<br>Hardness - French Degrees: 7.2<br>Hardness - German Degrees: 4.03<br>Hardness - International: 72</div>`)[0];
+                popup_3700163b25152b8b3b4c85c5d629f768.setContent(html_77e70dd9a48081a89fb1f02453fdf700);
+            
+        
+
+        marker_2f60c7ca422d946576d945b7bf8cd964.bindPopup(popup_3700163b25152b8b3b4c85c5d629f768)
+        ;
+
+        
+    
+    
+            var marker_68849cfa0af9a55b02642ff14c975d56 = L.marker(
+                [-26.5212228, 131.8811617],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_2740dda7fbdc9d72b0831e39270df7ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_68849cfa0af9a55b02642ff14c975d56.setIcon(icon_2740dda7fbdc9d72b0831e39270df7ec);
+        
+    
+        var popup_5c3dc0904051f6eb7b03eaa4e07a6c18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8544ae19872ad8cdc43c3d4d20416882 = $(`<div id="html_8544ae19872ad8cdc43c3d4d20416882" style="width: 100.0%; height: 100.0%;">Alkalinity: 335<br>Aluminium - acid soluble: 0.001<br>Antimony: <0.0003<br>Arsenic: 0.00079<br>Barium: 0.0976<br>Beryllium: <0.0002<br>Bicarbonate: 409<br>Boron: 0.259<br>Cadmium: <0.0001<br>Calcium: 39.8<br>Carbonate: 0<br>Chloride: 216<br>Chromium: 0.0024<br>Colour: <1<br>Copper: 0.0312<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: 1.2<br>Hardness: 403<br>Iodide: 0.12<br>Iron: 0.0013<br>Lanthanum: <0.0001<br>Lead: 0.0006<br>Magnesium: 73.6<br>Manganese: <0.0001<br>Mercury: <0.00003<br>Molybdenum: 0.0008<br>Nickel: 0.0005<br>Nitrate + nitrite as NO3: 16.47<br>pH: 7.8<br>Potassium: 6.21<br>Selenium: 0.0031<br>Silica - reactive: 82.9<br>Silver: <0.00002<br>Sodium: 167<br>Sulphate: 119.9<br>Total dissolved solids: 878<br>Turbidity: 0.12<br>Uranium: 0.0021<br>Zinc: 0.0144<br>Hardness - English Degrees: 28.21<br>Hardness - French Degrees: 40.3<br>Hardness - German Degrees: 22.57<br>Hardness - International: 403</div>`)[0];
+                popup_5c3dc0904051f6eb7b03eaa4e07a6c18.setContent(html_8544ae19872ad8cdc43c3d4d20416882);
+            
+        
+
+        marker_68849cfa0af9a55b02642ff14c975d56.bindPopup(popup_5c3dc0904051f6eb7b03eaa4e07a6c18)
+        ;
+
+        
+    
+    
+            var marker_532325661f8a9f1c7735087ec3f40c4d = L.marker(
+                [39.7459468, -75.546589],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_ce7c787c95cf3edc2a6c068d651e0f85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_532325661f8a9f1c7735087ec3f40c4d.setIcon(icon_ce7c787c95cf3edc2a6c068d651e0f85);
+        
+    
+        var popup_51ec2075ab65dc6412f25d69c8313f44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0cefb26481d7ef5d617c79e97118abfb = $(`<div id="html_0cefb26481d7ef5d617c79e97118abfb" style="width: 100.0%; height: 100.0%;">Alkalinity: 87<br>Aluminium - acid soluble: 0.002<br>Antimony: <0.0003<br>Arsenic: 0.00085<br>Barium: 0.1600<br>Beryllium: <0.0002<br>Bicarbonate: 107<br>Boron: 0.020<br>Cadmium: <0.0001<br>Calcium: 18.1<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 105<br>Chlorine (free residual): 1.9<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 1.9<br>Chloroacetic acid: <3<br>Chromium: 0.0003<br>Colour: <1<br>Copper: 0.1605<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: 0.2<br>Hardness: 114<br>Iodide: <0.01<br>Iron: 0.0786<br>Lanthanum: <0.0001<br>Lead: 0.0003<br>Magnesium: 16.7<br>Manganese: 0.0011<br>Mercury: <0.00003<br>Molybdenum: 0.0005<br>Nickel: 0.0018<br>Nitrate + nitrite as NO3: 0.97<br>Pentachlorophenol: <0.05<br>pH: 7.0<br>Potassium: 15.8<br>Selenium: 0.0005<br>Silica - reactive: 27.0<br>Silver: <0.00002<br>Sodium: 50.8<br>Sulphate: 17.2<br>Total dissolved solids: 325<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 13<br>Turbidity: 0.39<br>Uranium: <0.0001<br>Zinc: 0.0381<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 7.98<br>Hardness - French Degrees: 11.4<br>Hardness - German Degrees: 6.38<br>Hardness - International: 114</div>`)[0];
+                popup_51ec2075ab65dc6412f25d69c8313f44.setContent(html_0cefb26481d7ef5d617c79e97118abfb);
+            
+        
+
+        marker_532325661f8a9f1c7735087ec3f40c4d.bindPopup(popup_51ec2075ab65dc6412f25d69c8313f44)
+        ;
+
+        
+    
+    
+            var marker_985052a12c56cfd1fafcbd96df324c9c = L.marker(
+                [-35.506343, 138.2465012],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_8cbb08cd019eb236c9b85033fb19b85b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_985052a12c56cfd1fafcbd96df324c9c.setIcon(icon_8cbb08cd019eb236c9b85033fb19b85b);
+        
+    
+        var popup_df7bb34abb0d77ae5aa899f5f9e66ae7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b39da8de0be01f400dbdac277aa5c24 = $(`<div id="html_0b39da8de0be01f400dbdac277aa5c24" style="width: 100.0%; height: 100.0%;">Alkalinity: 68<br>Aluminium - acid soluble: 0.023<br>Antimony: <0.0003<br>Arsenic: 0.00028<br>Barium: 0.0410<br>Beryllium: <0.0002<br>Bicarbonate: 83<br>Boron: 0.079<br>Cadmium: <0.0001<br>Calcium: 33.8<br>Carbonate: 0<br>Chloral hydrate: <1.0<br>Chloride: 405<br>Chlorine (free residual): 0.4<br>Chloramine (mono residual): <0.1<br>Chlorine (total residual): 0.6<br>Chlorite: <0.01<br>Chloroacetic acid: <3<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0152<br>Cyanide as CN: <0.05<br>Dichloroacetic acid: <1<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 200<br>Iodide: 0.02<br>Iron: 0.0086<br>Lanthanum: <0.0001<br>Lead: <0.0001<br>Magnesium: 28.1<br>Manganese: 0.0059<br>Mercury: <0.00003<br>Molybdenum: 0.0002<br>Nickel: 0.0013<br>Nitrate + nitrite as NO3: 0.65<br>Pentachlorophenol: <0.05<br>pH: 7.5<br>Potassium: 6.87<br>Selenium: <0.0001<br>Silica - reactive: 4.91<br>Silver: <0.00002<br>Sodium: 245<br>Sulphate: 119.5<br>Total dissolved solids: 951<br>Trichloroacetic acid: <1<br>Trihalomethanes (THMs): 179<br>Turbidity: 0.15<br>Uranium: <0.0001<br>Zinc: 0.0209<br>2 4 6 Trichlorophenol: <0.1<br>2 4 Dichlorophenol: <0.1<br>2 Chlorophenol: <0.05<br>Hardness - English Degrees: 14.00<br>Hardness - French Degrees: 20.0<br>Hardness - German Degrees: 11.20<br>Hardness - International: 200</div>`)[0];
+                popup_df7bb34abb0d77ae5aa899f5f9e66ae7.setContent(html_0b39da8de0be01f400dbdac277aa5c24);
+            
+        
+
+        marker_985052a12c56cfd1fafcbd96df324c9c.bindPopup(popup_df7bb34abb0d77ae5aa899f5f9e66ae7)
+        ;
+
+        
+    
+    
+            var marker_0d77a51449c3162980bd9212d5d50be7 = L.marker(
+                [-34.25654995, 140.19729598097075],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_a1444cf9baf883ef46586d1572a49661 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0d77a51449c3162980bd9212d5d50be7.setIcon(icon_a1444cf9baf883ef46586d1572a49661);
+        
+    
+        var popup_efd591e7d576ed064df636ad55293abe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e217140f898051f320bb4189827523a5 = $(`<div id="html_e217140f898051f320bb4189827523a5" style="width: 100.0%; height: 100.0%;">Alkalinity: 68<br>Aluminium - acid soluble: 0.026<br>Ammonia - free - as NH3: 0.22<br>Antimony: <0.0003<br>Arsenic: 0.00038<br>Barium: 0.0378<br>Beryllium: <0.0002<br>Bicarbonate: 72<br>Boron: 0.025<br>Cadmium: <0.0001<br>Calcium: 13.2<br>Carbonate: 6<br>Chloride: 76<br>Chlorine (free residual): <0.1<br>Chloramine (mono residual): 2.5<br>Chlorine (total residual): 2.5<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0011<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 68<br>Iodide: 0.03<br>Iron: 0.0475<br>Lanthanum: <0.0001<br>Lead: 0.0004<br>Magnesium: 8.48<br>Manganese: 0.0058<br>Mercury: <0.00003<br>Molybdenum: 0.0003<br>NDMA (N-Nitrosodimethylamine): <4<br>Nickel: 0.0002<br>Nitrate + nitrite as NO3: 1.82<br>pH: 8.7<br>Potassium: 3.87<br>Selenium: <0.0001<br>Silica - reactive: 0.81<br>Silver: <0.00002<br>Sodium: 47.5<br>Sulphate: 13.1<br>Total dissolved solids: 235<br>Turbidity: 0.25<br>Uranium: <0.0001<br>Zinc: 0.0018<br>Hardness - English Degrees: 4.76<br>Hardness - French Degrees: 6.8<br>Hardness - German Degrees: 3.81<br>Hardness - International: 68</div>`)[0];
+                popup_efd591e7d576ed064df636ad55293abe.setContent(html_e217140f898051f320bb4189827523a5);
+            
+        
+
+        marker_0d77a51449c3162980bd9212d5d50be7.bindPopup(popup_efd591e7d576ed064df636ad55293abe)
+        ;
+
+        
+    
+    
+            var marker_f475fa74646453cd795c80666f404479 = L.marker(
+                [-31.4803513, 131.8426235],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_9aec393bcb0f8b230cb2b58d1af4d8ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f475fa74646453cd795c80666f404479.setIcon(icon_9aec393bcb0f8b230cb2b58d1af4d8ad);
+        
+    
+        var popup_f8aa5af81ef9a79146c33eb06a42f9eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7317f63cececb5ae8880f6bc2ab9ee4 = $(`<div id="html_c7317f63cececb5ae8880f6bc2ab9ee4" style="width: 100.0%; height: 100.0%;">Alkalinity: 122<br>Aluminium - acid soluble: 0.070<br>Antimony: <0.0003<br>Arsenic: 0.00013<br>Barium: 0.0012<br>Beryllium: <0.0002<br>Bicarbonate: 150<br>Boron: 0.228<br>Cadmium: <0.0001<br>Calcium: 43.5<br>Carbonate: 0<br>Chloride: 34<br>Chromium: 0.0005<br>Colour: <1<br>Copper: 0.0395<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 116<br>Iodide: 0.03<br>Iron: 0.2881<br>Lanthanum: 0.0004<br>Lead: 0.0025<br>Magnesium: 1.75<br>Manganese: 0.0427<br>Mercury: 0.00005<br>Molybdenum: <0.0001<br>Nickel: 0.0005<br>Nitrate + nitrite as NO3: 0.07<br>pH: 7.7<br>Potassium: 0.78<br>Selenium: <0.0001<br>Silica - reactive: 0.31<br>Silver: <0.00002<br>Sodium: 21.0<br>Sulphate: 2.6<br>Total dissolved solids: 192<br>Turbidity: 3.56<br>Uranium: <0.0001<br>Zinc: 0.0097<br>Hardness - English Degrees: 8.12<br>Hardness - French Degrees: 11.6<br>Hardness - German Degrees: 6.50<br>Hardness - International: 116</div>`)[0];
+                popup_f8aa5af81ef9a79146c33eb06a42f9eb.setContent(html_c7317f63cececb5ae8880f6bc2ab9ee4);
+            
+        
+
+        marker_f475fa74646453cd795c80666f404479.bindPopup(popup_f8aa5af81ef9a79146c33eb06a42f9eb)
+        ;
+
+        
+    
+    
+            var marker_d38ed243f0dfaeba73f6d8c6164bad26 = L.marker(
+                [-26.327498, 132.4471028],
+                {
+}
+            ).addTo(marker_cluster_45cf66629e925dff04d6c3683bfd4fd9);
+        
+    
+            var icon_15ee8c0c263bc43544f9a45863e54c3a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d38ed243f0dfaeba73f6d8c6164bad26.setIcon(icon_15ee8c0c263bc43544f9a45863e54c3a);
+        
+    
+        var popup_000f9e110cec2d58ae860d888a3001c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_809e260c706ac22c472637d31743453c = $(`<div id="html_809e260c706ac22c472637d31743453c" style="width: 100.0%; height: 100.0%;">Alkalinity: 30<br>Aluminium - acid soluble: 0.007<br>Antimony: <0.0003<br>Arsenic: 0.00008<br>Barium: 0.0024<br>Beryllium: <0.0002<br>Bicarbonate: 36<br>Boron: 0.114<br>Cadmium: <0.0001<br>Calcium: 8.79<br>Carbonate: 0<br>Chloride: <4<br>Chromium: <0.0001<br>Colour: <1<br>Copper: 0.0124<br>Cyanide as CN: <0.05<br>E. coli: 0<br>Fluoride: <0.10<br>Hardness: 26<br>Iodide: 0.01<br>Iron: 0.0108<br>Lanthanum: <0.0001<br>Lead: 0.0004<br>Magnesium: 0.91<br>Manganese: < 0.001<br>Mercury: <0.00003<br>Molybdenum: <0.0001<br>Nickel: <0.0002<br>Nitrate + nitrite as NO3: 2.35<br>pH: 7.9<br>Potassium: 0.13<br>Selenium: <0.0001<br>Silica - reactive: 3.42<br>Silver: <0.00002<br>Sodium: 3.4<br>Sulphate: <0.6<br>Total dissolved solids: 52<br>Turbidity: 0.16<br>Uranium: <0.0001<br>Zinc: 0.0369<br>Hardness - English Degrees: 1.82<br>Hardness - French Degrees: 2.6<br>Hardness - German Degrees: 1.46<br>Hardness - International: 26</div>`)[0];
+                popup_000f9e110cec2d58ae860d888a3001c8.setContent(html_809e260c706ac22c472637d31743453c);
+            
+        
+
+        marker_d38ed243f0dfaeba73f6d8c6164bad26.bindPopup(popup_000f9e110cec2d58ae860d888a3001c8)
+        ;
+
+        
+    
+    
+            marker_cluster_45cf66629e925dff04d6c3683bfd4fd9.addTo(map_ae41b21327f7de2a9bda313ed36a6bb6);
+        
+</script>
+</html>

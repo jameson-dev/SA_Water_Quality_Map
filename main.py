@@ -86,7 +86,7 @@ for _, row in grouped_data.iterrows():
     ).add_to(marker_center)
 
 # Save the map to HTML file
-html_file = "SA_Water_Quality_2024.html"
+html_file = "index.html"
 
 print(f"Saving HTML file: {html_file}")
 m.save(html_file)
